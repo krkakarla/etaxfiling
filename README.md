@@ -4,4 +4,4 @@ second test
 third test
 fourth test
 push test
-github merger
+github merger2
