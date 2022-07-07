@@ -1,0 +1,27 @@
+/*Selector{
+	Property: value ;
+	
+}*/
+
+body {
+
+	/*background-image: url("http://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/car_3.png"); */
+	/* background-image: url("../img/HRAAllowance.jpg");*/
+	background-color: aqua;
+
+}
+
+.Container {
+
+	display: Inline-block;
+}
+
+button {
+	display: block;
+	margin: 20px auto
+}
+
+h1 {
+
+	color: pink
+}

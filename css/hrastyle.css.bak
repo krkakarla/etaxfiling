@@ -1,0 +1,25 @@
+/*Selector{
+	Property: value ;
+	
+}*/
+
+body {
+	background-image:  url("../img/HRAAllowance.jpg") ;
+
+}
+
+.Container{
+	
+	display: Inline-block;
+}
+
+button{
+	display: block;
+	margin: 20px auto
+}
+
+h1 {
+	
+color:pink
+
+}

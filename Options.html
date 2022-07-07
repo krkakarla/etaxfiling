@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>etaxfiling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</header>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">EtaxFiling</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Salary
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Allowance</a></li>
+                            <li><a class="dropdown-item" href="#">Deductions</a></li>
+                            <li><a class="dropdown-item" href="#">Exemptions</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Investments
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Long Terms Investments</a></li>
+                            <li><a class="dropdown-item" href="Options.html">Options</a></li>
+                            <li><a class="dropdown-item" href="#">Futures</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <p> Below are list of Trading Strategies </p>
+
+    <ol>
+        <li><b>Straddle</b> : Straddle involves buying a call and put with the same strike price and same expire
+            date.
+        </li><br>
+        <li><b>Strangle</b> : Strangle Invoices buying a put and call with the different strike price and same
+            expire
+            date.</li><br>
+        <li><b>Strips</b> : Strip involves selling one call and two puts with the same strike price and same expiry
+            date.</li><br>
+        <li><b>Straps</b> : Strap involves selling two calls and one put with the same strike price and same expire
+            date.</li><br>
+    </ol>
+
+    <P>
+    <ol>
+        <ul><b><u>Straddle</u></b></ul><br>
+        <li><b>Meaning:</b> The Investor Buy/Sell both a Call Options and a Put Option for the Same Strike
+            price
+            with the same expiry date.</li><br>
+        <li><b>Basis:</b></li>
+        <ol type="a">
+            <li>Investor expect extreme volatility in the Market.</li>
+            <li>Direction of movement in stock prices is not expected to be fixed.</li>
+            <li>The Options are under valued and the market is expected to become Bullish.</li> <br>
+        </ol>
+        <li><b>Benefits:</b></li>
+        <ol type="a">
+            <li>Generation of Income in the form of Premium.</li>
+            <li>Profit Potential Open ended in either direction.</li>
+            <li>Maximum loss limited to the premium paid.</li><br>
+        </ol>
+        <li><b>Short Straddles Rules:</b></li>
+        <ul>Short ATM Call and Put</ul>
+        <ul>Book Profit at 25% of Max Profit</ul>
+        <ul>Adjust at 25 positional delta breach</ul>
+        <ul>SL is 50% of Max. Profit</ul>
+    </ol>
+    <table border="1" cellspacing="0">
+        <tr>
+            <th colspan="3"> Type of Straddles</th>
+
+        </tr>
+        <tr>
+            <th>Areas</th>
+            <th>Long Straddle</th>
+            <th>Short Straddle</th>
+            </th>
+        </tr>
+        <tr>
+            <td>Stratergy</td>
+            <td>Buy a Call, Buy a Put, at the same Expiry Date with the same Exercise Price.</td>
+            <td>Write a Call, Write a Put, at the same Expiry Date with the same Exercise Price.</td>
+        </tr>
+        <tr>
+            <td>Condition</td>
+            <td>If the expected spot price on the Expiry Date will be far away from the Strike Price.</td>
+            <td>If the expected spot price on the expiry date is within certain limits on either side of the
+                Strike Price.</td>
+        </tr>
+        <tr>
+            <td>Profilt Potential</td>
+            <td>Ability to make Profit is Unlimited.</td>
+            <td>The amount of Profit is Limited.</td>
+        </tr>
+        <tr>
+            <td>Limitation of Loss</td>
+            <td>The amount of Loss is limited to the amount of the Total Premium Paid</td>
+            <td>Loss is Unlimited.</td>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
