@@ -4,7 +4,6 @@
 	<head>
 		<title> HRA Calculation</title>
 		<!-- Customized Bootstrap Stylesheet -->
-		<title>etaxfiling</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -22,7 +21,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -30,9 +29,9 @@
 								Salary
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Allowance</a></li>
-								<li><a class="dropdown-item" href="#">Deductions</a></li>
-								<li><a class="dropdown-item" href="#">Exemptions</a></li>
+								<li><a class="dropdown-item" href="Allowance.html">Allowance</a></li>
+								<li><a class="dropdown-item" href="Deductions.html">Deductions</a></li>
+								<li><a class="dropdown-item" href="Exemptions.html">Exemptions</a></li>
 								<li>
 									<hr class="dropdown-divider">
 								</li>
@@ -76,17 +75,43 @@
 			<li> House Rent Allowance </ls>
 			</li>
 		</ol>
-		<div <Form name="HRAF" method="GET" id="form1">
-			Your name: <Input Type="text" name="yourname"><br>
-			Email Id : <Input Type="email" name="email" required> <br>
-			Basice Salary Permonth : <Input Type="text" name="basicsalary" required id="basicsalary"> <br>
-			HRA Allowance : <Input Type="text" name="HRAAllowance" required id="HRAAllowance"><br>
-			City : <br>
-			<input id="rd1" type="Radio" name="cite" value="MetroCity">Metro <br>
-			<input id="rd2" type="Radio" name="cite" value="NonMetro">NonMetro<br>
-			Maximum HRA Amount : <Input Type="text" name="MAXHRA" id="MAXHRA"><br>
-			<button type="Submit" form="form1" value="Submit" onclick="HRACAL()">HRA AMOUNT</button>
-			<Input type="reset">
+		<div <Form name="HRAF" method="GET" id="form1" class="row g-3 needs-validation" novalidate>
+			<div class="col-md-4">
+				<label for="validationCustom01" class="form-label">First name</label>
+				<input type="text" class="form-control" id="validationCustom01" required>
+				<div class="valid-feedback">
+					Looks good!
+				</div>
+				<div class="col-md-4">
+					<label for="validationCustom02" class="form-label">Last name</label>
+					<input type="text" class="form-control" id="validationCustom02" required>
+					<div class="valid-feedback">
+						Looks good!
+					</div>
+					<div class="col-md-4">
+						<label for="validationCustom01" class="form-label">Basice Salary Permonth</label>
+						<input type="text" class="form-control" name="basicsalary" id="basicsalary" required>
+						<div class="valid-feedback">
+							Looks good!
+						</div>
+						HRA Allowance : <Input Type="text" name="HRAAllowance" required id="HRAAllowance"><br>
+						City : <br>
+						<div class="form-check">
+							<input class="form-check-input" id="rd1" type="Radio" name="cite" value="MetroCity">Metro
+							<br>
+							<input class="form-check-input" id="rd2" type="Radio" name="cite"
+								value="NonMetro">NonMetro<br>
+						</div>
+						<div>
+							Maximum HRA Amount : <Input Type="text" name="MAXHRA" id="MAXHRA"><br>
+							<button type="Submit" form="form1" value="Submit" onclick="HRACAL()">HRA AMOUNT</button>
+							<Input type="reset">
+
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
 			integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
