@@ -1,0 +1,14 @@
+function HRACAL() {
+var	basal = Number(document.getElementById("basicsalary").value);
+var HRALL = Number(document.getElementById("HRAAllowance").value);
+var ehour = Number((basal * 0.10));
+var basicper = Number(basal * 0.50)
+var CompHRAALL = Number((HRALL +ehour));
+
+alert(CompHRAALL)	 
+
+document.getElementById("MAXHRA").value = CompHRAALL;
+ 
+result.innertext =  document.getElementById("MAXHRA").value
+ 
+};
