@@ -1,0 +1,34 @@
+/******* Etaxfiling Home Page CSS ********/
+
+/*Selector{
+	Property: value ;
+	
+}*/
+
+.etaxTable,
+th,
+td {
+
+    border: 1px solid;
+    font-weight: normal
+}
+
+.div {
+    background-color: lightcyan;
+}
+
+
+/*
+.etaxTable {
+    
+    border-collapse: collapse;
+    border-spacing: 2px;
+    
+    
+    text-indent: initial;
+    
+    border-color: grey;
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+}*/
