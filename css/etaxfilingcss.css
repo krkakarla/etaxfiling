@@ -17,6 +17,11 @@ td {
     background-color: lightcyan;
 }
 
+.whatsapp_float {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
 
 /*
 .etaxTable {
