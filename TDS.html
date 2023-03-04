@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Deductions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/etaxfilingcss.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">EtaxFiling</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Salary
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Taxplanning.html">Tax planning</a></li>
+                            <li><a class="dropdown-item" href="Allowance.html">Allowance</a></li>
+                            <li><a class="dropdown-item" href="Deductions.html">Deductions</a></li>
+                            <li><a class="dropdown-item" href="Exemptions.html">Exemptions</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Investments
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Long Terms Investments</a></li>
+                            <li><a class="dropdown-item" href="Options.html">Options</a></li>
+                            <li><a class="dropdown-item" href="#">Futures</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <P>As per income tax Act Department we can cliam deductions to derive finalize taxable income</P>
+    <nav class="container-fluid">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <!-- <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                <P>.</P>
+            </button>-->
+            <button class="nav-link" id="nav-adding-tab10" data-bs-toggle="tab" data-bs-target="#nav-adding10"
+                type="button" role="tab" aria-controls="nav-adding-tab10" aria-selected="false">Deduction 80C
+            </button>
+            <button class="nav-link" id="nav-adding-tab7" data-bs-toggle="tab" data-bs-target="#nav-adding7"
+                type="button" role="tab" aria-controls="nav-adding-tab7" aria-selected="true">Deduction 80CCD
+            </button>
+            <!--     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Deduction 80D
+            </button> -->
+            <button class="nav-link" id="nav-adding-tab9" data-bs-toggle="tab" data-bs-target="#nav-adding9"
+                type="button" role="tab" aria-controls="nav-adding-tab9" aria-selected="false">Deduction 80D
+            </button>
+            <button class="nav-link" id="nav-adding-tab5" data-bs-toggle="tab" data-bs-target="#nav-adding5"
+                type="button" role="tab" aria-controls="nav-adding-tab5" aria-selected="false">Deduction 80DD
+            </button>
+            <button class="nav-link" id="nav-adding-tab6" data-bs-toggle="tab" data-bs-target="#nav-adding6"
+                type="button" role="tab" aria-controls="nav-adding-tab6" aria-selected="false">Deduction 80DDB
+            </button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Deduction 80E</button>
+            <button class="nav-link" id="nav-adding-tab" data-bs-toggle="tab" data-bs-target="#nav-adding" type="button"
+                role="tab" aria-controls="nav-adding-tab" aria-selected="false">Deduction 80EE
+            </button>
+            <button class="nav-link" id="nav-adding-tab1" data-bs-toggle="tab" data-bs-target="#nav-adding1"
+                type="button" role="tab" aria-controls="nav-adding-tab1" aria-selected="false">Deduction 80EEA
+            </button>
+            <button class="nav-link" id="nav-adding-tab2" data-bs-toggle="tab" data-bs-target="#nav-adding2"
+                type="button" role="tab" aria-controls="nav-adding-tab2" aria-selected="false">Deduction 80EEB
+            </button>
+            <button class="nav-link" id="nav-adding-tab3" data-bs-toggle="tab" data-bs-target="#nav-adding3"
+                type="button" role="tab" aria-controls="nav-adding-tab3" aria-selected="false">Deduction 80G
+            </button>
+            <button class="nav-link" id="nav-adding-tab4" data-bs-toggle="tab" data-bs-target="#nav-adding4"
+                type="button" role="tab" aria-controls="nav-adding-tab4" aria-selected="false">Deduction 80GG
+            </button>
+            <button class="nav-link" id="nav-adding-tab12" data-bs-toggle="tab" data-bs-target="#nav-adding12"
+                type="button" role="tab" aria-controls="nav-adding-tab12" aria-selected="false">Deduction 80TTA
+            </button>
+            <button class="nav-link" id="nav-adding-tab11" data-bs-toggle="tab" data-bs-target="#nav-adding11"
+                type="button" role="tab" aria-controls="nav-adding-tab11" aria-selected="false">Deduction 80U
+            </button>
+        </div>
+    </nav>
+    <!---Deduction 80C Detils -->
+    <nav class="container-fluid">
+        <div class="tab-content" id="nav-tabContent">
+            <!--  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">Deduction Under 80C</div>-->
+            <div class="tab-pane fade" id="nav-adding7" role="tabpanel" aria-labelledby="nav-adding-tab7" tabindex="0">
+                <p><b>Deduction in respect of contribution to a national pension system (NPS [sec.80CCD])</b></p>
+                <p><b>237A.</b>These provisions are given below-</p>
+                <p>
+                    <li>Conditions - section 80CCD is applicable if the following conditions are satisfied-</li>
+                </p>
+                <p>1.The taxpayer is an individual.</p>
+                <p>2.He is employed by the central Government (on or after january 1,2004),or employed by any other
+                    person.He may be
+                    even a self-employed person.</p>
+                <p>3.He has in the previous year paid or deposited any amount in his account under NPS.NPS covers New
+                    pension Scheme
+                    (notified under Notification No.
+                    F.No.5/7/2003-ECB&PR,dated December 22,2003) and atal pension yojana (as per Notification No.SO
+                    529(E),
+                    dated
+                    February 19,2016),
+                </p>
+                <P>
+                    <li>Consequences if the above conditions are satisfied-If the above conditions are satisfied,then
+                        the
+                        following
+                        consequences given by section
+                        80CCD should be noted-</li>
+                </P>
+
+                <p>1.Contribution towards NPS by employee (or any other individual assessee) [see. 80CCD(1)]-Assessee's
+                    contribution
+                    to NPS is deductible under
+                    section 80CCD(1) in the year in which contribution is made.No deduction is available in respect of
+                    employee's
+                    contribution which is in excess
+                    of 10 per cent of the salary of the employee. LikeWise, if contribution by a taxpayer (not being an
+                    employee)
+                    exceeds 10 per cent
+                    (20 per cent from the assessment year 2018-19) of his gross total income, the excess shall not be
+                    taken
+                    into
+                    consideration for the purpose
+                    of section 80CCD(1).</p>
+                <p>2.contribution towards NPS by employer {sec.80CCD(2)]-Contribution by the employer to NPS is
+                    deductible
+                    under
+                    section 80CCD(2) in the hands
+                    of the concerned employee in the year in which contribution is made.However, no deduction is
+                    available
+                    in
+                    respect of employer's contribution
+                    which is in excess of 10 per cent [or (with effect from the assessment year 2020-21) 14 per cent, if
+                    employer is
+                    the central Government] of
+                    the salaryof the employee.</p>
+                <p>3.Cumulative monetary ceiling - By virtue of section 80CCE, the aggregate amount of deducton under
+                    section
+                    80C,80CCC and 80CCD(1)
+                    [i.e.,contribution by an employee (or any other individual)towards NPS]cannot exceed Rs.1,50,000.The
+                    ceiling
+                    limit is not applicable
+                    (from the assessment year 2012-13)in respect of an assessee's contribition towards NPS under section
+                    80CCD (1B)
+                    From
+                    the assessment year 2016-17 which is given below.</p>
+                <p>4.Additional contribution up to Rs.50,000 towards NPS under section 80CCD(1B)-Sub-section (1B) has
+                    been
+                    inserted
+                    in section 80CCD (With effect from
+                    the assessment year 2016-17) so as to provide for an additional deduction in respect of any amount
+                    paid
+                    (up to
+                    Rs.50,000) For contribution made by any
+                    individual assessee under the NPS. On this contribution, the ceiling of Rs.1,50,000 under section
+                    80CCE
+                    will not
+                    be applicable.The additional deduction
+                    of Rs.50,000 is available whether (or not) any claim under section 80CCD(1) has been made-CIRcular
+                    No.19/2015,dated november 27,2015.For instance, X
+                    (Who is covered by NPS) gets salary of RS.8,00,000 per annum.He annually contributes 10per cent of
+                    salary
+                    towards NPS and RS.1,21,000 towards PPF/LIP
+                    since 2014.For the assessment year 2020-21,he can claim deduction as follows-</p>
+
+                <p>-Rs.50,000 under section 80CCD(1B).</p>
+                <p>-Rs.30,000 Under section 80CCD(1).</p>
+                <p>-Rs.1,20,000 under section 80C.</p>
+
+                <p>
+                    <li>X has not made any additional investment over and above the minimum requirement of 10 per cent
+                        contribution
+                        towards NPS.But he can claim deduction of
+                        Rs.50,000 under section 80CCD(1B).</li>
+                </p>
+
+                <P>5.Tax at the time of withdrawal-The amount standing to the credit of an assessee in NPS,for which a
+                    deduction has
+                    already been claimed by him, and accretions
+                    to such account, shall be taxed as follows-</P>
+
+
+                <table class="table table-bordered border= 1" cellspacing="0">
+                    <tr>
+                        <th scope="co1"></th>
+                        <th>Provisions applicable-</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="co1"></th>
+                        <th scope="col">From the AY 2020-21</th>
+                        <th scope="col">For the AYs 2018-19 and 2019-20</th>
+                        <th scope="co1">For the AY 2017-18</th>
+                        <th scope="co1">Up to the AY 2016-17</th>
+                    </tr>
+
+                    <tr>
+                        <th>1.Partial withdrawal from NPS (to the extent it does not exceed 25% of an employee's
+                            contribution)</th>
+                        <th>Exempt</th>
+                        <th>Exempt</th>
+                        <th>Taxable</th>
+                        <th>Taxable</th>
+                    </tr>
+
+                    <tr>
+                        <th>2.Amount received by an employee [or a non-employee (applicable from the assessment year
+                            2019-20)]
+                            on closure of his account or on his opting out of the NPS </th>
+                        <th>60% exempt</th>
+                        <th>40% exempt</th>
+                        <th>40% exempt</th>
+                        <th>Taxable</th>
+                    </tr>
+
+                    <tr>
+                        <th>3.In (2),amount is received by a nominee
+                            on the death of the assessee.</th>
+                        <th>Exempt</th>
+                        <th>Exempt</th>
+                        <th>Exempt</th>
+                        <th>Taxable</th>
+                    </tr>
+
+                    <tr>
+                        <th>4.Pension received out of NPS</th>
+                        <th>Taxable</th>
+                        <th>Taxable</th>
+                        <th>Taxable</th>
+                        <th>Taxable</th>
+                    </tr>
+
+                    <tr>
+                        <th>5.Amount received in (2),(3),(4) is Utilized for purchasing an annuity plan in the same
+                            previous
+                            year
+                        </th>
+                        <th>Exempt</th>
+                        <th>Exempt</th>
+                        <th>Exempt</th>
+                        <th>Exempt</th>
+                    </tr>
+                    <tr>
+                        <th>6.Pension received out of annuity plan purchased in (5)</th>
+                        <th>Taxable</th>
+                        <th>Taxable</th>
+                        <th>Taxable</th>
+                        <th>Taxable</th>
+                    </tr>
+                </table>
+
+                <p>6.Meaning of "Salary"-"salary" for the purpose of points1 and 2 (supra)includes dearness allowances
+                    (if the terms of employment so provide) and commission (if is payable at a percentage of turnove
+                    achieved by the employee),but excludes all other allowances and perquisites.</p>
+
+                <p><b>Para 237A</b></p>
+                <p><b>237A-P1</b> Find out net income in the following cases for the assessment year 2020-21
+                    (age of the taxpayer in each case in 55 year)-</p>
+                <p>Situation 1-X is empilyed by the central government sinx=ce 2009. For the previous year 2019-20, his
+                    basic salary
+                    is Rs. 5,00,000 per annum. Besides, he gets deamess allowance of Rs. 50,000 per annum and special
+                    allowances of
+                    Rs.
+                    1,00,000 per annum.His income of other sources is Rs.2,10,000. The central Government contributes 13
+                    per
+                    cent of
+                    salary
+                    (including dearness allowance) towards NPS. The contribution of X towards NPSis RS.1,40,000.
+                    Besides, X
+                    deposits
+                    Rs.
+                    96,000 in public provident funds, Rs.5,000 in notified (section 80CCC) annuity plan of LIC and pays
+                    mediclaim
+                    insurance
+                    premium of RS.35,000 (policy covers medical benefits for X and Mrs. X).</p>
+
+                <p>Situation 2 - X in the aforesaid case is employed by a private sector company and the employer has
+                    opted
+                    for NPS.
+                </p>
+                <p>Situation 3 - X in the Aforesaid case is employed by a private sector company and the employer has
+                    recogized
+                    provident fund.
+                    Contributions given in situation 1 are towards recognized provident fund. Besides, X contributes on
+                    additional
+                    sum of
+                    Rs.40,000 towards NPS. </p>
+                <p>situation 4 - X is a self-employed person. His business income is Rs.8,10,000 and income from other
+                    sourcess is
+                    RS.2,10,000.
+                    He annually contributes Rs.2,60,000 towards NPS. Besides, X deposits RS.30,000 in public providers
+                    fund,
+                    deposits Rs.5,000
+                    in notified (section 80CCC) annuity plan of LIC, and pays mediclaim insurance premium of Rs.35,000
+                    (policy
+                    covers medical
+                    benefits for X and Mrs. X).</p>
+                <table class="table table-bordered border= 1" cellspacing="0">
+                    <tr>
+                        <th colspan="2">SOLUTION :</th>
+                        <th>situation 1 Rs.</th>
+                        <th>situation 2 Rs.</th>
+                        <th>situation 3 Rs.</th>
+                        <th>situation 4 Rs.</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Basic salary and dearness allowance</th>
+                        <th>5,50,000</th>
+                        <th>5,50,000</th>
+                        <th>5,50,000</th>
+                        <th>Nil</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Special allowance</th>
+                        <th>1,00,000</th>
+                        <th>1,00,000</th>
+                        <th>1,00,000</th>
+                        <th>Nil</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Employer's contribution towards NPS (13% of Rs.5,50,000)</th>
+                        <th>71,500</th>
+                        <th>71,500</th>
+                        <th>Nil</th>
+                        <th>Nil</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Employer's contribution towards RPF (in excess of 12% of salary)</th>
+                        <th>Nil</th>
+                        <th>Nil</th>
+                        <th>5,500</th>
+                        <th>Nil</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Gross salary</th>
+                        <th>7,21,500</th>
+                        <th>7,21,500</th>
+                        <th>6,55,500</th>
+                        <th>Nil</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Less: standard deduction</th>
+                        <th>50,000</th>
+                        <th>50,000</th>
+                        <th>50,000</th>
+                        <th>Nil</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Income under the head "salaries"</th>
+                        <th>6,71,500</th>
+                        <th>6,71,500</th>
+                        <th>6,05,500</th>
+                        <th>Nil</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Business income</th>
+                        <th>Nil</th>
+                        <th>Nil</th>
+                        <th>Nil</th>
+                        <th>8,10,000</th>>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Income from other sources</th>
+                        <th>2,10,000</th>
+                        <th>2,10,000</th>
+                        <th>2,10,000</th>
+                        <th>2,10,000</th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Gross total income (GTI)</th>
+                        <th>8,81,500</th>
+                        <th>8,81,500</th>
+                        <th>8,15,500</th>
+                        <th>10,20,000</th>
+                    </tr>
+                    <th>List of Deduction</th>
+                    <tr>
+                        <th style="background-color: lightblue" ;>
+                            DEDUCTIONS NOT COVERED BY CUMULATIVE CEILING- Under section 80CCD(1B) (contribution by the
+                            assessee
+                            towards NPS up to Rs.50,000)
+                        </th>
+                        <th>(a)</th>
+                        <th>50,000</th>
+                        <th>50,000</th>
+                        <th>40,000</th>
+                        <th>50,000</th>
+                    </tr>
+
+                    <tr>
+                        <th>Under section 80CCD(2) [Contribution by employer towards NPS, subject to maximum of 14% of
+                            salary in
+                            the case of central Government employee
+                            or 10% of salary in the case of any other employee]</th>
+                        <th>(b)</th>
+                        <th>71,500</th>
+                        <th>55,000</th>
+                        <th>Nil</th>
+                        <th>Nil</th>
+                    </tr>
+
+                    <tr>
+                        <th>Under section 80D (mediclaim insurance premium) (limited to Rs.25,000 in the case of a
+                            person who is
+                            not a senior citizen)</th>
+                        <th>(c)</th>
+                        <th>25,000</th>
+                        <th>25,000</th>
+                        <th>25,000</th>
+                        <th>25,000</th>
+                    </tr>
+
+                    <tr>
+                        <th style="background-color: lightgreen" ;>DEDUCTIONS COVERED BY CUMULATIVE CEILING OF
+                            Rs.1,50,000-Under section 80C (ppf and
+                            contribution
+                            towards recognised
+                            provied fund)</th>
+                        <th>(d)</th>
+                        <th>(96,000)</th>
+                        <th>(96,000)</th>
+                        <th>(1,50,000)</th>
+                        <th>(30,000)</th>
+                    </tr>
+
+                    <tr>
+                        <th>Under section 80CCC (annuity plan of LIC)</th>
+                        <th>(e)</th>
+                        <th>(5,000)</th>
+                        <th>(5,000)</th>
+                        <th>(5,000)</th>
+                        <th>(5,000)</th>
+                    </tr>
+
+                    <tr>
+                        <th>Under section 80CCD (1) [contribution of X towards NPS (excluding the contribution
+                            considered above
+                            in section 80CCD(1B)), subject
+                            to a maximum of 10% of salary in the case of an employee or 20% of GTI in the case of a
+                            person other
+                            than employee]</th>
+                        <th>(f)</th>
+                        <th>(54,000)</th>
+                        <th>(54,000)</th>
+                        <th>Nil</th>
+                        <th>(2,04,000)</th>
+                    </tr>
+
+                    <tr>
+                        <th>Maximum deductible amount [i.e.,(d) + (e) + (f), subject to a maximum of Rs.1,50,000]</th>
+                        <th>(g)</th>
+                        <th>1,50,000</th>
+                        <th>1,50,000</th>
+                        <th>1,50,000</th>
+                        <th>1,50,000</th>
+                    </tr>
+
+                    <tr>
+                        <th>Net income [GTI-(a)-(b)-(c)-(g)]</th>
+                        <th></th>
+                        <th>5,85,000</th>
+                        <th>6,01,500</th>
+                        <th>6,00,500</th>
+                        <th>7,95,000</th>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <p><b>Deduction 80D</b></p>
+                <p><b>Deduction in resepect of medical insurance premia[Sec. 80D]</b></p>
+                <p><b>238.</b> Deduction under section 80D is available if the following conditions are satisfied-</p>
+                <p>
+                    <li>.The Taxpayer is an indiduval(may be resident/non-resident or Indian citizen/foreign citizen of
+                        a
+                        Hindu undivided family(may be resident or non resident).</li>
+                </p>
+                <p>
+                    <li> .payment Should be made out of income chargble to tax</li>
+                </p>
+                <p>
+                    <li>.Payment should be made by any mode other than cash. However,payment on account of preventive
+                        health
+                        check-up cn be made by any mode(including cash).
+                    </li>
+                </p>
+
+
+                <p><b>238.1 Maximum deductible amount-</b> The maximum deductible amount and other relevant payment are
+                    below-
+                </p>
+                <table class="table table-bordered border=" 1" cellspacing="0">
+                    <tr>
+
+                        <th scope="col"></th>
+                        <th>Deduction case of indiduval</th>
+
+                        <th scope="col"></th>
+                        <th>Deduction in the case of Huf</th>
+
+                    </tr>
+                    <tr>
+                        <th>For whose benifit payment can be made</th>
+                        <th scope="col">family</th>
+                        <th scope="col">parent</th>
+                        <th scope="col">Any member of Huf</th>
+                    </tr>
+                    <tr>
+                        <ol scope="A"></ol>
+                        <th>
+                            <li>a.Medi-claim insurance premium</li>
+                            <li>b.Contribution to CGHS/notified scheme</li>
+                            <li>c.preventive health check-up payment</li>
+                        </th>
+                        <th>
+                            <li>Eligible</li>
+                            <li>Eligible</li>
+                            <li>Eligible</li>
+                        </th>
+                        <th>
+                            <li>Eligible</li>
+                            <li>_</li>
+                            <li>Eligible</li>
+                        </th>
+
+                        <th>
+                            <li>Eligible</li>
+                            <li>_</li>
+                            <li>_</li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>Maximum deduction</p>
+                            <li>.General deduction[applicable in resepect of (a),(b)and(c)] </li>
+                            <li>.Addtional deduction [applicable only in case of </li>
+                            <li>(a)when med-claim policy is taken on the life of a senior citizen]</li>
+                        </th>
+                        <th>
+                            <li>Rs 25,000</li>
+
+                            <li>Rs 25,000</li>
+                        </th>
+                        <th>
+                            <li>Rs 25,000</li>
+
+                            <li>Rs 25,000</li>
+                        </th>
+                        <th>
+                            <li>Rs 25,000</li>
+                            <li>Rs 25,000</li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <li>Medical exependiture on the health of a person who is a super senior citizen
+                                (senior citizen from the assessment year 2019-20)
+                                if medi-claim insurance is not paid on the health of such person</li>
+                            <li>Maximum deduction in resepect of(B)</li>
+                        </th>
+
+                        <th>
+                            <li>Eligible</li>
+
+                            <li>Rs 50,000</li>
+                        </th>
+                        <th>
+                            <li>Eligible</li>
+                            <li>Rs 50,000</li>
+                        </th>
+                        <th>
+                            <li>Eligible</li>
+                            <li>Rs 50,000</li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <li>Maximum deduction in respect of (A)and(B)</li>
+                        <th>
+                            <li>Rs 50,000</li>
+                        <th>
+                            <li>Rs 50,000</li>
+                        </th>
+                        <th>
+                            <li>Rs 50,000</li>
+                        </th>
+                        </th>
+                        </th>
+                    </tr>
+                </table>
+                <b>Notes-</b>
+                <p> 1.Family includes indiduval,spouse of the indiduval and dependent Childern of the indiduval</p>
+                <p>2.Parents includes father and mother(dependent or otherwise).Father-in-law and mother-in-law are not
+                    included.</p>
+                <p>3.The aggregate payment on account of preventive health check-up of self,spouse dependent
+                    childern,father
+                    and
+                    mother cannot exceed Rs 5,000.</p>
+                <p>4.The above payment[given under (A)and(B)should be made by any mode other than cash.However,payment
+                    on
+                    account of preventive health check up
+                    can be made by any mode(including cash).</p>
+                <p>5."senior citizen" is a resident indiduval who is least 60 years of age at any time during the
+                    previous
+                    year.
+                </p>
+                <p>6."super senior citizen"is a resident indiduval who is at least 80 years of age at any time during
+                    the
+                    previous year.</p>
+                <p>7.In cas of single premium health insurance policies having cover of more than one year, the
+                    aforesaid
+                    deduction shall be allowed(from
+                    the assessment year 2019-20)on proprtinate basis for the number of year for which health insurance
+                    cover
+                    is
+                    provided.</p>-->
+            </div>
+            <div class="tab-pane fade" id="nav-adding9" role="tabpanel" aria-labelledby="nav-adding-tab9" tabindex="0">
+                Dedcution Under 80D
+                <P><b>DEDUCTION IN RESPECT OF MEDICAL INSURANCE Premia[sec . 80D]</b>
+                    <b>238</b>.Deduction under section 80D is available if available if the following conditions
+                    are satisfied-
+                </P>
+                <p>
+                <ol type="a">
+                    <li>.The taxpayer is an individual (may be resident or Indian citizen/foreign citizen) a
+                        Hindu undivided family(may be residents) a Hindu undivided family (maybe resident or
+                        non-resident)</li>
+                    <li>.Payment should be made out of income chargeable to tax</li>
+                    <li>.Payment should be made by any mode other than cash. However, payment on account of
+                        preventive health check-up can be made by any mode(including cash)</li>
+                </ol>
+                </p>
+
+                <p><b>238.1 Maximum deductible amount - </b>The maximum deductible amount and other revelvent payment
+                    are given below-</p>
+                <table class="table table-bordered border= 1" cellspacing="0">
+                    <th scope="col"></th>
+                    <th>deducation in the case of indiduval</th>
+
+                    <th scope="col"></th>
+                    <th>Deduction in the case of huf</th>
+
+                    <tr>
+                        <th>for whose benifit payment can be made</th>
+                        <th scope="col">family</th>
+                        <th scope="col">parents</th>
+                        <th scope="co1">Any member of Huf</th>
+                    </tr>
+                    <tr>
+
+                        <th>
+                            <ol type="a"></ol>
+                            <li>a.Medi-claim insurance premium</li>
+                            <li>b.contribution to CGHS/notified scheme</li>
+                            <li>c.preventive heaith check-up payment</li>
+                        </th>
+                        <th>
+                            <li>Eligible</li>
+                            <li>Eligible</li>
+                            <li>Eligible</li>
+                        </th>
+                        <th>
+                            <li>Eligible</li>
+                            <li>-</li>
+                            <li>Eligible</li>
+                        </th>
+                        <th>
+                            <li>Eligible</li>
+                            <li>-</li>
+                            <li>-</li>
+                        </th>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>Maximum deducation</p>
+                            <li>-General deducation [applicable in respect of (a),(b) and (c)]</li>
+                            <li>Additional deduction [applicable only in case of </li>
+                            <li>(a) when Medi-claim policy is taken on the life of a senior citizen]</li>
+                        </th>
+                        <th>
+                            <li> Rs 25,000</li>
+                        </th>
+                        <th>
+                            <li> Rs 25,000</li>
+                        </th>
+                        <th>
+                            <li> Rs 25,000</li>
+                            <li> Rs 25,000</li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <li>medical expenditure on the health of a person who is a super senior citizen (senior
+                                citizen from the assessment year 2019-20) if medi-claim insurance is not paid on the
+                                health of such person</li>
+                            <li>Maximum deduction in respect of (B)</li>
+                        </th>
+                        <th>
+                            <li> Eligible </li>
+                            <li> Rs 50,000 </li>
+                        </th>
+                        <th>
+                            <li> Eligible </li>
+                            <li> Rs 50,000 </li>
+                        </th>
+                        <th>
+                            <li> Eligible </li>
+                            <li> Rs 50,000 </li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <li>Maximum deduction in respect of (A) and (B)</li>
+                        </th>
+                        <th>
+                            <li> Rs 50,000 </li>
+                        </th>
+                        <th>
+                            <li> Rs 50,000 </li>
+                        </th>
+                        <th>
+                            <li> Rs 50,000 </li>
+                        </th>
+                        </th>
+                    </tr>
+                </table>
+                <b>Notes-</b>
+                <p>1.Family includes individual, spouse of the individual and dependent children of the
+                    individual.</p>
+                <p>2.Parents include father and mother (dependent or otherwise).Father-in-law and
+                    mother-in-law are not included.</p>
+                <p>3.The aggregate payment on account of preventive health check-up of self, spouse,
+                    dependent children, father and mother cannot exceed Rs.5,000.</p>
+                <p>4.the above payments [given under (A) and (B) should be made by any mode other than
+                    cash. However payment on account of preventive health check-up can be made by any
+                    mode (including cash).</p>
+                <p>5.*Senior citizen* is a resident individual who is at least 60 years of age at any
+                    time during the previous year.</p>
+                <p>6.*Super senior citizen* is a resident individual who is at least 80 years of age at
+                    any time during the previous year.</p>
+                <p>7.in case of single premium health insurance policies having cover of more than one
+                    year, the aforesaid deduction shall be allowed (form the assessment year 2019-20)on
+                    proportionate basis for the number of years for which health insurance cover is
+                    provided</p>
+            </div>
+            <div class="tab-pane fade" id="nav-adding10" role="tabpanel" aria-labelledby="nav-adding-tab10"
+                tabindex="0">
+                <p><b>Deduction 80C</b></p>
+                <p><b>Deduction in respect of life insurance premia, deferred annuity, contributions to provident fund,
+                        subscription
+                        to certain fund,
+                        to certain equilty shares or debentures, etc.[Sec.80C]</b></p>
+                <p><b>235.</b>Section 80C provides deduction in respect of specified qualifying amounts paid or
+                    deposited by
+                    the
+                    assessee in the previous year.</p>
+                <p><b>235.1 Salient features of section 80C -</b>The following are salient features of section 80C-</p>
+                <li>Who can claim deduction under section 80C - Deduction under section 80C is available only to an
+                    individual
+                    or a
+                    Hindu undivided family.</li>
+                <li>What is the Qualifying investments to avail deduction - Deduction is available on the basis of
+                    specified
+                    qualifying investments/contributions/
+                    deposits/payments made by the taxpayer during the previous year. such investment, deposit, etc., can
+                    be
+                    made
+                    out
+                    of taxable income or otherwise
+                    The complete list of such investment is given in para 235.2-1.</li>
+                <li>What is the basis of deduction - Deduction is available on actual payment basis. For instance, if
+                    insurance
+                    premium becomes due on March 24,2020
+                    and actually paid on April 1, 2020, such premium is qualified for deduction under section 80C for
+                    the
+                    previous
+                    year 2020-21.</li>
+                <li>How much deduction available under section 80C - The maximumamount deductible under section 80C is
+                    Rs.1,50,000.
+                </li>
+                <li>is there any combined maximum ceiling - The aggregate amount of deduction under section 80C, 80CCC
+                    and
+                    80CCD(l)
+                    [i.e.,Contribution by an employee
+                    (or any other individual)towards National Pension scheme (NPS)] cannot exceed Rs.1,50,000.</li>
+                <p><b>235.2 Compution of deduction under section 80C -</b>The deduction is calculated as per the
+                    following
+                    steps--
+                </p>
+                <p>Step 1 -Gross qualifying amount [see para 235.2-1]</p>
+                <p>Step 2 -Amount of deduction [see para 235.2-2].</p>
+                <p><b>235.2-1</b> step 1 -GROSS QUALIFYING AMOUNT -Gross qualifying amount is the aggregate of the
+                    following:
+                </p>
+
+                <div class="d-flex p-1">I'm a flexbox container!
+                    <p><b>Nature of payment</b></p>
+
+                    <ol>
+                        <li>Life insurance premium (including payment made by Government employees to the Central
+                            Government
+                            Employees' insurance scheme and payment
+                            made by a person under children's deferred endowment assurance policy) [see Note 1]</li>
+                        <li>Payment in respect of non-commutable deferred annuity[see Note 2</li>
+                        <li>Any sum deducted from salary payable to a government employee for the purpose of securing
+                            him a
+                            deferred
+                            annuity (subject to a maximum
+                            of 20 per cent of salary) [See Note.3]
+                        </li>
+                    </ol>
+                </div>
+                <p>Claim For deduction will be denined if return is not submitted within the due date specified under
+                    section
+                    139(1).this Rule is equally
+                    applicable, if return is submitted in a belated mode under section 139(4)-SUOLIFICIO LINEA ITALIA
+                    (INDIA)(P.)LTD.v.CIT[2018]96 taxmann.com 462(cal.)</p>
+
+                <!---I'm a flexbox container!--->
+                <div class="d-flex p-1">
+                    <p><b>Nature of payment</b></p>
+                    <ol>
+                        <li>Contribution (not being repayment of loan) towards statutory provident fund and recognized
+                            provident
+                            fund.</li><br>
+                        <li>contribution (not being repayment of loan) towards 15 year public provident fund [see Notes
+                            4,6
+                            and
+                            it]
+                        </li>
+                        <li>contribution towards an approved superannuation fund</li>
+                        <li>Subscripition to National savings certificates, VIII Issue or IX Issue[see Note 7] and
+                            deposit
+                            in
+                            sukanya samriddhi
+                            Account [see Note 12]</li>
+                        <li>Contribution for participating in the unit-linked insurance plan (ULIP) of unit trust of
+                            india
+                            [see
+                            Note5]</li>
+                        <li>Contribution for participating in the unit-linked insurance plan (ULIP) of LIC Mutual Fund
+                            (formerly
+                            known as
+                            Dhanraksha plan of LIC Mutual Fund) [see Note 5]</li>
+                        <li>Payment for notified annuity plan of LIC (i.e.,Jeevan Dhara Akshay) or any other insurer
+                            (i.e.,immediate
+                            Annuity plan
+                            of ICICI Prudential Life Insurance company), Tata AIG Easy Retire Annuity plan)</li>
+                        <li>Subscription towards notified units of Mutual funds or UTI</li>
+                        <li>Contribution to notified pension fund set up by Mutual Fund or UTI(i.e.,Retirement Benefit
+                            Pension
+                            Fund
+                            of UTI, Reliance
+                            Retirement Fund)</li>
+                        <li>Any sum paid (including accrued interest) as subscription to Home Loan Account scheme of the
+                            National
+                            Housing Bank or
+                            contribution to any notified deposit scheme or pension fund set up by the National Housing
+                            bank.
+                        </li>
+                        <li>Any sum paid as subscription to any scheme of-</li>
+                        <li>a.Public sector company engaged in providing long -term finance for purchase/construction of
+                            residential
+                            houses in india (i.e., public deposit scheme of HUDCO);</li>
+                        <li>b.housing board constituted in india for the purpose of planning, development or improvement
+                            of
+                            cities/towns</li>
+
+                        <li>Any sum paid as tuition fees(not including any payment towards development
+                            fees/donation/payment
+                            of
+                            similar nature)whwther at the time of admission or otherwise to any
+                            two children of the individual [Note 10]</li>
+                        <li>Any instalment or part payment towards the cost of purchase/construction of a residential
+                            property
+                            to a
+                            housing board or co-operative society (or repayment of housing Loan
+                            taken from Government,bank,cooperative bank, LIC, National Housing Bank, assessee's employer
+                            where
+                            such
+                            employer is public company/public sector company/university/co-operative society)
+                            [see Note 9]</li>
+                        <li>Amount invested in approved dedentures of, and equity shares in, a public company engaged
+                            infrastructure
+                            including power sector or units of a mutual fund proceeds of which are utilised
+                            for the developing, maintaining,etc., of a new infrastructure facility</li>
+                        <li>Amount deposited as term deposit for a period of 5 years or more in accordance with a scheme
+                            framed
+                            by
+                            the central Government</li>
+                        <li>Subscription to any notified bonds of National Bank for Agriculture and Rural
+                            Development(NABARD)
+                        </li>
+                        <li>Amount deposited under Senior Citizens Saving scheme [Note 11]</li>
+                        <li>Amount deposited in five year time deposit scheme in post office.</li>
+                        <li>Amount contributed (for a fixed period of not less than 3 years) by a Central Government
+                            employee to
+                            his NPS(Tier-II) account (applicable from the assessment year 2020-21).</li>
+                    </ol>
+                </div>
+                <p><b>Note:</b></p>
+                <p>1.In the case of an individual policy should be taken on his own life, life of the spouse or any
+                    child
+                    (child
+                    may
+                    be dependent/independent, male/female, minor/major or married/unmarried). In the case
+                    of a Hindu divided family, policy may be taken on the life of any member of the family.Insurance
+                    premium
+                    cannot
+                    occed the maximum ceiling given below-</p>
+
+                <table class="table table-bordered border= 1" cellspacing="0">
+
+                    <th scope="co1"></th>
+                    <th>Policy on the life of a person with disability or severe disability or on the life of a person
+                        suffering
+                        from disease
+                        or ailment as given in section 80DDB</th>
+
+                    <th>Policy on the life any other person</th>
+                    <tr>
+                        <th>
+                            <li>-If policy is issued before April 1,2012</li>
+                            <li>-If policy is issued during 2012-13</li>
+                            <li>-If policy is issued on or after April 1,2013</li>
+                        </th>
+                        <th>
+                            <li>20% of sum assured*</li>
+                            <li>10% of sum assured**</li>
+                            <li>15% of sum assured**</li>
+                        </th>
+                        <th>
+                            <li>20% of sum assured*</li>
+                            <li>10% of sum assured**</li>
+                            <li>10% of sum assured**</li>
+                        </th>
+                    </tr>
+                </table>
+                <p>verefied scheme for this purpose is the National Housing Bank (Tax Saving)Term Deposit Scheme,2008.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="nav-adding5" role="tabpane1" aria-labelledby="nav-adding-tab5" tabindex="0">
+                <p><b>Deduction 80DD</b></p>
+                <p><b>Deduction in respect of maintenance including medical treatment of a dependent being a person with
+                        disability-when and to what extent available [Sec.80DD]</b>
+                <p><b>239.</b>The provisions of section 80DD are given below :</p>
+                <p><b>239.1</b>Conditions - The following conditions should be satisfied-
+                <p>1.The taxpayer is resident in india (may be ordinarily resident or not ordinarily resident).</p>
+                <p>2.The resident taxpayer is an individual (may be an indian citizen or foregin citizen) or a hinndu
+                    undivided
+                    family.</p>
+                <p>3.The taxpayer has opted for any (or both)of the following options-</p>
+                <table class="table table-bordered border= 1" cellspacing="0">
+
+                    <th>Option 1</th>
+                    <th>Option 2</th>
+
+                    <tr>
+                        <th>
+                            <li>The taxpayer has incurred an expenditure for the medical treatment y (including
+                                nursing),training
+                                and rehabilitation of a dependent (being a person with disability) </li>
+                        </th>
+
+                        <th>
+                            <li>The taxpayer has paid or deposited under any scheme framed in this behalf by the life
+                                insurance
+                                corporation or any other insurer,or the administrator' or specified company and approved
+                                by
+                                the
+                                board in this behalf, for main-tenance of dependent (being a person with disability)
+                            </li>
+                        </th>
+                    </tr>
+                </table>
+                <p>4.For the above purpose, a "dependent being a person with disability* is a person who satisfies the
+                    following
+                    points-</p>
+                <li>a.in the case of an individual, dependent means the spouse,children,parents,brother and sisters of
+                    the
+                    individual or any of them;</li>
+                <li>b.in the case of a hindu undivided family , "dependent" means a member of a hindu undivided family;
+                </li>
+                <li>c.such person is wholly or mainly dependent upon such individual or hindu undivided family for
+                    support
+                    and
+                    maintenance;</li>
+                <li>d.such person has not claimed any deduction under section 80U in computing his total income for the
+                    assessment
+                    year relating to the previous year;</li>
+                <li>e."disability" shall have the meaning assigned to it in section 2(i) of the persons with
+                    disabilities
+                    (Equal
+                    Opportunities, protecion of rights and full participation) Act,1995 [see para 268.1-3];</li>
+                <li>f."person with disability" means a person having any "disability" stated above of not less than 40
+                    per
+                    cent.
+                </li>
+                <p>Autism cerebral palsy and multiple disability - the meaning of the expression "disability" has been
+                    enlarged from
+                    the assessment year 2005-06 to include "autism","cerebral palsy" and "multiple disability" referred
+                    to
+                    in
+                    clauses (a), (c) and (h) of section 2 of the National Trust for welfare of persons with Autism,
+                    cerebral
+                    palsy,
+                    Mental Retardation and multiple Disabilities Act, 1999. A similar amendment has been made in the
+                    definition of
+                    "medical authority","person with disability".</p>
+                <p>----------------</p>
+
+                <p>1."Administrator" means the administrator as referred to in clause (a) of section 2 of the unit trust
+                    of
+                    india
+                    (transfer of undertaking and repeal) Act, 2002.</p>
+                <p>2."Specified company" means a company as referred to in clause (h) of section 2 of the unit trust of
+                    india
+                    (transfer of undertaking and repeal) Act, 2002.</p>
+
+                <p><b>Para 239.2</b></p>
+                <p><b>Income -tax-Deductions from gross total income</b></p>
+                <p>5.Under option 2,the scheme provides for payment of an annuity or a lump sum amount for the benefit
+                    of
+                    dependent,
+                    being a person with disability, in the event of the death of the individual or the
+                    member of the hindu undivided family in whose name subscription to the scheme has been made.</p>
+                <p>6.Under option 2,the assessee nominates either the dependent (being a person with disability) or any
+                    other person
+                    or a trust to receive the payment on his behalf, for the benefit of such dependent.</p>
+                <p>7.For claiming the deduction, the assessee shall have to furnish a copy of the certificate issued by
+                    the
+                    medical
+                    authority [see para 268.1-4] along with the return of income*[the certificate shall be in
+                    Form NO.1O-IA Where the person is suffering from autism, cerebral palsy or multiple disability or in
+                    the
+                    form
+                    prescribed under persons with Disabilities Act in any other case].Where the condition of
+                    disability requries reassessment, a fresh certificate from the medical authority shall have to be
+                    obtained after
+                    the expiry of the period mentioned on the original certificate in order to continue to
+                    claim the deduction.</p>
+
+                <p><b>239.2 Amount of deduction</b>-The amount deductible is a fixed deduction of Rs.75,000 Whenever the
+                    conditions
+                    specified above are satisfied, irrespective of the amount incurred or deposited under Option 1 and
+                    Option 2.</p>
+
+                <li>A higher deduction of Rs. 1,25,000 shall be allowed, where such dependent is a person with severe
+                    disability
+                    having disability of 80 per cent or more.</li>
+
+                <p><b>239.3 If dependent predeceases the taxpayer</b>-If the dependent with disability predeceases the
+                    indiduval or
+                    the member of the Hindu undivided family
+                    referred to above, an amount equal to the amount paid or deposited as stated above shall be deemed
+                    to be
+                    the
+                    income of the assessee of the previous year in
+                    in which such amount is received by the assessee and shall accordingly be chargeable to tax as the
+                    income of
+                    that previous year.</p>
+
+                <p><b>239-P1</b>X is a resident individual. He annually deposits a sum of Rs.15,000 With LIC for the
+                    maintenance of
+                    his handicapped grandfather who is whally dependent
+                    upon him.The Disability comes under section 2(i) of the persons with Disabilities (Equal
+                    Opportunities,protection of rights and full participation) Act, 1995.A copy
+                    of certificate from medical authority is submitted .determine the amount of deduction available
+                    under
+                    section
+                    80DD for the assessment year 2020-21</p>
+
+                <p><b>SOLUTION</b>:As grandfather does not come with in the definition of "dependent" in the section,
+                    nothing shall
+                    be deducted under section 80DD.</p>
+
+                <p><b>239-P2</b> Suppose in 239-P1, the person with disability is a dependent brother (disability up to
+                    40
+                    per
+                    cent).</p>
+
+                <p><b>SOLUTION</b>:As brother comes in the definition of "dependent" ,Rs.75,000 is deductible for the
+                    assessment
+                    yaer 2020-21.If,however,the dependent brother is a person with severe disability 80% or more, then
+                    Rs.
+                    1,25,000
+                    is deductible.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-adding6" role="tabpanel" aria-labelledby="nav-adding-tab6" tabindex="0">
+                <p><b>Deduction 80DDB</b></p>
+                <p><b>240.</b>The provisions of section 80DDB are given below-----</p>
+                <p><b>240.1 conditions - </b>One has to satisfy the following conditions----</p>
+                <p>1.The taxpayer is resident in india (may be ordinarily resident or not ordinarily resident).</p>
+                <p>2.The taxpayer is an individual (may be an indian citizen or a foreign citizen) or a Hindu undivided
+                    family.</p>
+                <p>3.The taxpayer has actually paid any amount for the medical treatment of a specified disease or
+                    ailment
+                    as
+                    prescribed by the Board under rule 11DD [see para 240.3].</p>
+                <p>4.The expenditure is actually incurred for the medical treatment of the assessee himself or
+                    wholly/mainly
+                    dependent husband/wife, children, parents, brothers and sisters of the taxpayer. If the</p>
+
+                <p>---------------</p>
+                <li>*It is not possible to attach any prescription with new income-tax return forms. The assessee should
+                    himself
+                    retain the presciption. It may be furnished in original whenever the assessing Officer
+                    wants to examine it in assessment proceeding or otherwise. taxpayer is a Hindu Undivided family, the
+                    expenditure
+                    is actually incurred for the medical treatment of any member of the family who is wholly/mainly
+                    dependent upon
+                    the family.</li>
+                <p>5.The assessee shall have to submit a doctor's prescription*[see para 240.3]</p>
+
+                <p><b>240.2 Amount of deduction -</b>If the above conditions are satisfied, actual expenditure on
+                    medical
+                    treatment
+                    is deductible under section 80DDB. However,deduction cannot exceed the maximum amount given below -
+                </p>
+
+                <table class="table table-bordered border= 1" cellspacing="0">
+
+                    <th scope="co1"></th>
+                    <th>Maximum limit Rs.</th>
+
+                    <th>Maximum limit in the case of senior citizen Rs.</th>
+
+                    <th>Maximum limit in the case of super senior citizen Rs.</th>
+
+                    <tr>
+                        <th>
+                            <li>Up to the assessment year 2015-16</li>
+                            <li>For the assessment year 2016-17 to 2018-19</li>
+                            <li>From the assessment year 2019-20</li>
+                        </th>
+
+                        <th>
+                            <li>40,000</li>
+                            <li>40,000</li>
+                            <li>40,000</li>
+                        </th>
+
+                        <th>
+                            <li>60,000</li>
+                            <li>60,000</li>
+                            <li>1,00,000</li>
+                        </th>
+
+                        <th>
+                            <li>-</li>
+                            <li>80,000</li>
+                            <li>-</li>
+                        </th>
+                    </tr>
+                </table>
+
+                <p><b>Notes-</b></p>
+                <p>1.*Senior Citizen* is a resident individual who is at least 60 years (65 years, up to the assessment
+                    year
+                    2012-13)
+                    of age at any time during the previous year.</p>
+                <p>2.*Super senior citizen* is resident individual who is at least 80 years of age at any time during
+                    the
+                    previous
+                    year.</p>
+                <li>Deduction under this section shall be reduced by the amount received, if any, under an insurance
+                    from an
+                    insurer, or
+                    reimbursed by an employer, for the medical treatment of the person referred to above.</li>
+                </p>
+                <p><b>240.3 Prescribed diseases and certificate from a doctor -</b>For the purpose of section 80DDB, the
+                    following
+                    diseases
+                    have been specified under rule 11DD (colomn 1 of the table given below).to get the benefit of
+                    deduction,
+                    prescription
+                    in respect of these diseases/ailments shall be issued by the following specialists given in column 2
+                    of
+                    the
+                    table -
+
+                <table class="table table-bordered border = " 1 cellspacing="0">
+                    <tr>
+                        <th scope="col">Specified diseases</th>
+                        <th scope="col">Prescription in respect of the diseases or ailments specified in column 1 to be
+                            issued by
+                            the following specialists -</th>
+                    </tr>
+                    <tr>
+                        <th>Neurological diseases whrer the disability level has been certified to be of 40% and
+                            above,-(a)
+                            Demenatia; (b)Dystonia Musculorum Deformans;
+                            (c)Motor Neuron Disease; (d)Ataxia; (e)Chorea; (f) Hemiballismus; (g) Aphasia; (h)
+                            Parkinsons
+                            Disease
+                        </th>
+                        <th>A neurologist having a doctorate of medicine (DM) Degree in Neurology or any equivalent
+                            recognised
+                            degree</th>
+                    </tr>
+                    <tr>
+                        <th>Malignant cancers</th>
+                        <th>An oncologist having a Doctorate of medicine (DM) degree in oncology or any equivalent
+                            recognised degree
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Full blown Acquried Immuno-Deficiency synd-rome (AIDS)</th>
+                        <th>Any specialist having a post-graduate degree in general or internal medicine, or any
+                            equivalent
+                            recognised degree</th>
+                    </tr>
+                    <tr>
+                        <th>Chronic Renal failure</th>
+                        <th>A Nephrologist having a Doctorate of Medicine(DM) degree in Nephrology or a Urologist having
+                            a
+                            Master of
+                            Chirurgiae(MCh)
+                            degree in Urology or any equivalent recognised degree
+                        </th>
+                    </tr>
+                </table>
+
+                <li>*It is not possible to attach any prescription with new income-tax return forms. The assessee should
+                    himself
+                    retain prescription.
+                    it may be furnished in original whenever the Assessing Officer wants to examine it in assessment
+                    proceedings or
+                    otherwise.</li>
+                </p>
+
+                <p><b>Para 240.3</b> Income-tax - Deductions from gross total income </p>
+
+                <table class="table table-bordered border = " 1 cellspacing="0">
+                    <tr>
+                        <th scope="col">Specified diseases</th>
+                        <th scope="col">Prescription in respect of the diseases or ailments specified in column 1 to be
+                            issued by
+                            the following specialists - </th>
+                    </tr>
+                    <tr>
+                        <th>Hematological disorders :(a) Hemophilia; (b) Tha-lassaemia</th>
+                        <th>A specialist having a Doctorate of medicine (DM) degree in Hematology or any equivalent
+                            recognised
+                            degree</th>
+                    </tr>
+                </table>
+
+                <p><b>Notes-</b></p>
+
+                <p>1.Where in respect of any diseases or ailments specified above, the patient is receiving the
+                    treatment in
+                    a
+                    government hospital,
+                    the prescription may be issued by any specialist working full-time in that hospital and having a
+                    postgraduate
+                    degree in General
+                    or Internal medicine or any equivalent recognised degree.</p>
+                <p>2.For the prescription referred to above, noformat or form has been issued. The prescription shall
+                    contain the
+                    name and age of the
+                    patient,name of the disease or ailment along with the name,address,registration number and the
+                    qualification of
+                    the specialist
+                    issuing the prescription. Where,however,the patient is receving the treatment in a government
+                    hospital,
+                    such
+                    prescription sahll
+                    also contain the name and address of the Government hospital.</p>
+
+                <p><b>240-P1</b> X(35 years) is a resident individual. during the previous year, he incurs the following
+                    expenditure-</p>
+                <table class="table table-bordered border= 1" cellspacing="0">
+                    <tr>
+                        <th>Actual expenditure Rs.</th>
+                        <th>Amount re-imbursed by insurance company Rs.</th>
+                        <th>Amount re-imbursed by employer of X RS.</th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <li>30,000</li>
+                            <li>14,000</li>
+                        </th>
+                        <th>
+                            <li>Nil</li>
+                            <li>3,000</li>
+                        </th>
+                        <th>
+                            <li>28,000</li>
+                            <li>6,000</li>
+                        </th>
+                    </tr>
+                </table>
+                <p>Medical treatment (specified disease) of X in a government Hospital</p>
+                <p>Medical treatment (specified disease) of Mrs.X in a Hospital recognised by chief commissioner</p>
+                <p>Salary of X is Rs. 14,00,000. in the two cases, disease is specified in the rules made by the Board.
+                    Find out the net income of X for the assessment year 2020-21.</p>
+
+                <p><b>SOLUTION:</b></p>
+                <table>
+                    <lo>
+                        <tr>
+                            <th>Salary</th>
+                            <th>Rs.</th>
+                        </tr>
+                        <tr>
+                            <th>Perquisite in respect of medical treatment of X and his spouse</th>
+                            <th>14,00,000</th>
+                        </tr>
+                        <tr>
+                            <th>Gross Salary</th>
+                            <th>Nil</th>
+                        </tr>
+                        <tr>
+                            <th>less:standard deduction</th>
+                            <th>14,00,000</th>
+                        </tr>
+                        <tr>
+                            <th>Salary</th>
+                            <th>50,000</th>
+                        </tr>
+                        <tr>
+                            <th>Any other income</th>
+                            <th>13,50,000</th>
+                        </tr>
+                        <tr>
+                            <th>Gross total income</th>
+                            <th>Nil</th>
+                        </tr>
+                        <tr>
+                            <th>Less : Deduction under section 80DDB [see Note]</th>
+                            <th>13,50,000</th>
+                        </tr>
+                        <tr>
+                            <th>Net income</th>
+                            <th>3,000</th>
+                        </tr>
+                        <tr>
+                            <th>Note - The amount deductible is an follows-</th>
+                            <th>13,47,000</th>
+                        </tr>
+                        <tr>
+                            <th>a.actual expenditure (i.e., Rs.30,000 + Rs. 14,000);or</th>
+                        </tr>
+                        <tr>
+                            <th>b.Rs.40,000 (Rs. 1,00,000 in the case of senior citizen),Whichever is less.</th>
+                        </tr>
+                    </lo>
+                </table>
+
+                <p>Rs. 40,000 is deductible if nothing is recovered from the insurance company or employer. From the
+                    amount
+                    deductible
+                    (i.e., Rs.40,000 in this case), the amount received from insurance company as well as amployer shall
+                    be
+                    deducted.
+                    Therefore, Rs. 40,000 - Rs.3,000 - Rs.28,000 - Rs.6,000, i.e.,RS.3,000 is deductible.</p>
+
+                <p><b>240-P2</b>Find out the amount of deduction under section 80DDB in the following cases for the
+                    assessment year
+                    2020-21-</p>
+                <table class="table table-bordered border= 1" cellspacing="0">
+                    <tr>
+                        <th>Name of taxpayer</th>
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>Z</th>
+                        <th>A</th>
+                        <th>B</th>
+                    </tr>
+
+                    <tr>
+                        <th>Residential status of the taxpayer</th>
+                        <th>Resident</th>
+                        <th>Resident</th>
+                        <th>Resident</th>
+                        <th>Resident</th>
+                        <th>Non-resident</th>
+                    </tr>
+                    <tr>
+                        <th>Expenditure incurred on medical treatment of dependent mother in a hospital recognised by
+                            the
+                            chief
+                            commissioner (amount in rupees)</th>
+                        <th>50,000</th>
+                        <th>96,000</th>
+                        <th>1,60,000</th>
+                        <th>1,00,000</th>
+                        <th>54,000</th>
+                    </tr>
+                    <tr>
+                        <th>Age of mother</th>
+                        <th>59 years</th>
+                        <th>69 years</th>
+                        <th>73 years</th>
+                        <th>63 years</th>
+                        <th>64 years</th>
+                    </tr>
+                    <tr>
+                        <th>residential status of dependent mother</th>
+                        <th>REsident</th>
+                        <th>Non-resident</th>
+                        <th>Resident</th>
+                        <th>Non-resident</th>
+                        <th>Resident</th>
+                    </tr>
+                    <tr>
+                        <th>Whether the disease is specified under rule 11DD made by the board</th>
+                        <th>Yes</th>
+                        <th>Yes</th>
+                        <th>Yes</th>
+                        <th>Yes</th>
+                        <th>Yes</th>
+                    </tr>
+                    <tr>
+                        <th>Amount received from insurance company (amount in rupees</th>
+                        <th>4,000</th>
+                        <th>14,000</th>
+                        <th>90,000</th>
+                        <th>15,000</th>
+                        <th>7,000</th>
+                    </tr>
+                    <tr>
+                        <th>Amount received from the employer of the taxpayer (amount in rupees)</th>
+                        <th>2,000</th>
+                        <th>3,000</th>
+                        <th>14,000</th>
+                        <th>20,000</th>
+                        <th>16,000</th>
+                    </tr>
+                </table>
+
+                <p><b>SOLUTION:</b></p>
+                <table class="table table-bordered border= 1" cellspacing="0">
+                    <tr>
+                        <th>Ammount of deductin under section 80DDB</th>
+                        <th>X Rs.</th>
+                        <th>Y Rs.</th>
+                        <th>Z Rs.</th>
+                        <th>A Rs.</th>
+                        <th>B Rs.</th>
+                    </tr>
+
+                    <tr>
+                        <th>Deduction under section 80DDB if no money is recovered from insurance company and employer
+                        </th>
+                        <th>40,000</th>
+                        <th>40,000</th>
+                        <th>1,00,000</th>
+                        <th>40,000</th>
+                        <th>Nil</th>
+                    </tr>
+                    <tr>
+                        <th>Less : Amount received from insurance company and employer</th>
+                        <th>6,000</th>
+                        <th>17,000</th>
+                        <th>1,04,000</th>
+                        <th>35,000</th>
+                        <th>23,000</th>
+                    </tr>
+                    <tr>
+                        <th>Amount of deduction under section 80DDB</th>
+                        <th>34,000</th>
+                        <th>23,000</th>
+                        <th>Nil</th>
+                        <th>5,000</th>
+                        <th>Nil</th>
+                    </tr>
+                </table>
+                <p><b>Note -</b>The perquisite in respect of reimbursement of medical expenditure by employer is not
+                    chargeable to
+                    tax in this case.</p>
+            </div>
+            <div class=" tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                <p>Deduction 80E</p>
+                <p><b>Deduction in respect of payment of intterest on loan taken for higher studies [sec.80E]</b>
+                    <b>241.</b>Deduction under section 80E is available if the following conditions are satisfied:
+                </p>
+                <table class="table table-bordered border=" 1" cellspacing="0">
+                    <tr>
+
+
+                        <th>Condition1</th>
+                        <th>
+                            <li>The assessee is an individual.</li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>condition2</th>
+                        <th>
+                            <li>He ah loan from any bank, financial institution [i,e a banking or notified financial
+                                instituion]or an approved chartiable institution
+                                [i,e,an institution apporved for the purpose of section 10(23C)or 80G(2)(a)].</li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Condition3</th>
+                        <th>The loan was taken for the purpose of pursuing higher education[i,e,all fields of studies
+                            (including
+                            vocational studies)pursued
+                            after passing the senior Secondery Examination or its equivalent from any school,board or
+                            university
+                            recognised by the central
+                            Governament or state Governament or Local authority or by any other authority authorized by
+                            the
+                            central Governament or state Governament or local authority
+                            to do so].
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Condition4</th>
+                        <th>The loan was taken by the taxpayer for the purpose of pursuing his own higher education or
+                            for
+                            the
+                            purpose of higher education
+                            of his relatives,i.e, spouse/any chaild/(with effect from the asseessment year 2010-11)the
+                            taxpayer
+                            is the legal guardian.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Condition5</th>
+                        <th>Amount is paid by the indiduval during the previous year by way of interest on such loan.
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Condition6</th>
+                        <th>Such amount is paid out of his income chargble to tax.</th>
+                    </tr>
+
+                </table>
+                <p>HDFC Ltd, Credila Financial servies private Ltd.</p>
+                <p>
+                    <li>For Claiming deduction under secetion 80E,there is no requirement that higher education should
+                        be in
+                        India only-Nitin<b>Shantial Muthiyan</b>
+                        v.CIT[2015]59 taxmann.com 416 (pune).</li>
+                </p>
+                <p><b>241.1Amount deductible-</b>If the above Conditions are satisfied,the entier amount paid by way of
+                    interest
+                    is deductible under section 80E.
+                    However,the following points should be noted-</p>
+                <p>
+                <ol>1.The above deduction os allowed in computation the taxable income of the intial asseessment year
+                    (i.e,
+                    the
+                    assessnment year revelvent
+                    to the previous year in which the assessee starts paying the interest on the loan)and 7 immediately
+                    succeeding asseessment year (or until the
+                    above interest is paid in full whichever is earlier.)
+                </ol>
+                <ol>2.From the asseessment year2006-07,no deduction will be available under section 80E in respect of
+                    repayment
+                    of principal amount.</ol>
+                </p>
+            </div>
+            <div class="tab-pane fade" id="nav-adding" role="tabpanel" aria-labelledby="nav-adding-tab" tabindex="0">
+                <p>Deduction80EE</p>
+                <p><b>Deduction in resepect of interest on loan taken for residential house property [Sec.80EE]</b></p>
+                <ol>241A.The amount provisions of section 80EE are given below</ol>
+                <li>Conditions- The following conditions should be satisfied in order to claim deduction under section
+                    80EE.
+                </li>
+                <ol>1.The assessee is an indiduval.He may be resident or non-resident.</ol>
+                <ol>2.He has taken a loan.</ol>
+                <ol>3.Loan is taken for acquisition of residental house property.</ol>
+                <ol>4.Loan is taken from a bank or a housing finance Company.Bank for this purpose means a banking
+                    company
+                    to
+                    which
+                    the Banking Regulation
+                    Act,1949 applies including any bank or banking institution referred to in secetion 51 of that Act.A
+                    Housing
+                    finance Company means a public
+                    company formed or registered in India with the main object of carrying on the bussiness of providing
+                    long-term
+                    finance for construction
+                    or purchace of residental houses in India.
+                </ol>
+                <ol>5.The Loan has been sanctioned by the bank/housing finance company during April1,2016 and
+                    March31,2017.
+                </ol>
+                <ol>6.The amount of loan sanctioned for residental house property does not Exceed Rs.35 lakh.</ol>
+                <ol>7.The value of residential house property does not exceed rs.50 lakh.</ol>
+                <ol>8.The assessee does not own any residental house property on the date of sanction of loan.</ol>
+                <li>Amount of deduction-If the above conditions are satisfied,the assesseecan be claim deduction under
+                    section
+                    80EE.Deduction is available
+                    in respect of interest payble on the above loan or Rs.50,000 whichever is less.Deduction is
+                    available
+                    for
+                    the
+                    asseessment year 2017-18 and
+                    subsequent asseessment year.
+                </li>
+                <li>Double deduction not possible-If deduction is claimed under section 80EE no deduction will be
+                    allowed in
+                    respect
+                    of such interest under any other
+                    provision of the Act for the same or any other asseessment year.
+                </li>
+            </div>
+            <div class="tab-pane fade" id="nav-adding3" role="tabpanel" aria-labelledby="nav-adding-tab3" tabindex="0">
+                <p>Deduction 80G</p>
+                <p><b>Deduction in respect of donation to certain funds,chartiable institutions,etc.[sec.80G]</b></p>
+                <ol>242.Deduction under section 80G is available to any taxpayer(maybe indiduval, firm
+                    HUF,company;resident
+                    or
+                    non-resident)For calculating
+                    the Deduction Admissible under the section,the following three steps have to be observed:
+                </ol>
+                <ol>Step1 :Find out Gross Quality Amount[see para 242.1]</ol>
+            </div>
+            <div class="tab-pane fade" id="nav-adding4" role="tabpanel" aria-labelledby="nav-adding-tab4" tabindex="0">
+                <p>Deduction 80GG</p>
+                <p><b>Deduction in respect of rent paid [sec.80GG]</b></p>
+                <p>243.The following are salient features of section 80GG-</p>
+                <li>who can claim deduction - only an indiduval can claim deduction under section 80GG He can be a
+                    self-employed
+                    person. Alternatively he can
+                    an employee who does not get house rent allowance from the employer.
+                </li>
+                <li>What is the qualifying expenditure -only an indiduval who pays rent for a residental
+                    accommodationfor
+                    himself (and family)can avail deduction
+                    under section 80GG provided he gives a declaration in Form no.10B (this declaration can be submitted
+                    electronically to the Asseessing officer or whenever he wants to examine it.) </li>
+                <li>Can a person who payes rent to avail this deduction own house-The following person should not own
+                    any
+                    residential accommodation at the place
+                    whenever the taxpayer resides, performs the duties of his office,or employment or carries on his
+                    business or
+                    profession -
+                </li>
+                <ol>a.the taxpayer;</ol>
+                <ol>b.his/her spouse;</ol>
+                <ol>c.his/her minor chaild (including minor step chaild and minor adopted chaild);and</ol>
+                <ol>d.the Hindu undivided family of which the taxpayer is a member .</ol>
+                <p>If the taxpayer owns a residental accommodation at a place other than the place noted above, then in
+                    respect
+                    of that house the concession
+                    in respect of self-occupaid property is not claimed by him .
+                </p>
+                <li>What is the amount of deduction -The amount deductible under section 80GG is the least of the
+                    following
+                    <ol>a.Rs.5,000 per month (Rs. 2,000 per month,up to the assessment year 2016-17;</ol>
+                    <ol>b.25 per cent of "total income".</ol>
+                    <ol>c.the excess of actuval rent paid over 10 per cent of "total income".</ol>
+
+                </li>
+                <p>"Total income",for this purpose, is gross total income minus long terms capital gains,short-term
+                    capital
+                    gains under section 111A deductions section 80Cto80u (not being section 80GG)
+                    and income under section 115A.
+                </p>
+                <p><b>243-p1</b>Gross total income of X tax consultant based at Bombay is Rs.6,50,000[proffessional
+                    income/salary Rs.6,00,000(after Standerd deduction)
+                    interest on bank deposit: Rs.50,000 ] He pay Rs.9,500 as mediclaim insurance premium deductible
+                    under
+                    section 80D and Rs.80,000 as house rent.He deposits Rs.24,000 in public provident funds.compute his
+                    taxable
+                    income for the asseessment year 2020-21. </p>
+                <p>SOLUTION:</p>
+                <table>
+                    <ol>
+                        <tr>
+                            <th>proffessional income/salary</th>
+
+                            <th>Rs.</th>
+                        </tr>
+                        <tr>
+                            <th>Interest on bank deposit </th>
+                            <th>6,00,000</th>
+
+                        </tr>
+                        <tr>
+                            <th>Gross total income</th>
+                            <th>50,000</th>
+                        </tr>
+                        <tr>
+                            <th>Less:Deduction under sections 80CCC to 80U</th>
+                            <th>6,50,000</th>
+                        </tr>
+                        <tr>
+                            <th>under section 80C</th>
+                            <th>24,000</th>
+                        </tr>
+                        <tr>
+                            <th>under section 80DD</th>
+                            <th>9,500</th>
+
+                        </tr>
+                        <tr>
+                            <th>Under section 80GG(computed as per details given below)</th>
+                            <th>Rs 18,350</th>
+                        </tr>
+                        <tr>
+                            <th>Net income</th>
+                            <th>5,98,150</th>
+                        </tr>
+                </table>
+                </ol>
+                <p>Deduction under section 80GG is the least of the following :(a)Rs60,000;(b) Rs.1,54,125(being 25% of
+                    Rs.
+                    6,16,500,i.e,Rs 6,50,000
+                    Rs.24,000 -Rs.9,500); or (c)Rs.18,350(being the excess of rent paid over 10% of total income of
+                    Rs.6,16,500)
+                </p>
+            </div>
+            <!---80EEA Deduction Start-->
+            <div class="tab-pane fade" id="nav-adding1" role="tabpanel" aria-labelledby="nav-adding-tab" tabindex="0">
+                <p>Deduction80EEA</p>
+                <p><b>Deduction in respect in interest on loan taken for certain house property [sec 80EEA]</b></p>
+                <p>241B.secection 80EEA has been interested with effect from the asseessment year 2020-21.Deduction
+                    under
+                    this
+                    secection is available if the following
+                    conditions are satisfied-
+                </p>
+                <ol>1.The assessee is an indiduval .</ol>
+                <ol>2.He is not eligible to claim any deduction under section 80EE.</ol>
+                <ol>3.He has taken a loan for the purpose of acquisition of residental house property.</ol>
+                <ol>4.The loan is sanctioned by a financial institution(i.e,a bank or banking instituion or a housing
+                    finance
+                    company)during April 1,2019 and March31,2020.</ol>
+                <ol>5.The stamp duty value of the residental house property does not exceed Rs.45 lakh.The expression
+                    "stamp
+                    duty value"means value adopted (or assesseed
+                    or assesseable)by any authority of the central Government or a steate Governament for the purpose of
+                    payment
+                    of duty in respect of an immovable property
+                </ol>
+                <ol>6.The assessee does not own any residental house property on the date of sanction of loan. </ol>
+                <li>Amount of deduction-If the above conditions are satisfied,the assesseecan claim deduction under
+                    secetion
+                    80EEA.Deduction is available in
+                    respect of interest payble on the above loan or Rs.1,50,000,whichever is less.Deduction is available
+                    for
+                    the
+                    asseessment year 2020-21 and
+                    subsequent asseessment years.
+
+                </li>
+                <li>Same interest is not deductible twice-If interest is claimed as deduction under secetion 80EEA,such
+                    interest
+                    (or such portion of interest)is not
+                    again deductible under section24(b)or under any other provision of the Act for the same or any other
+                    assessment year.
+                </li>
+            </div>
+            <!---80EEA Deduction End-->
+            <div class="tab-pane fade" id="nav-adding2" role="tabpanel" aria-labelledby="nav-adding-tab2" tabindex="0">
+                <p>Deduction80EEB</p>
+                <p><b>241.Deduction in respect of interest on loan taken for purchace of electronic vehicle
+                        [sec.80EEB]</b>
+                </p>
+                <p>80EEB has been inserted from the assessment year 2020-21.Under this section,
+                    deduction is available if the following condition are</p>
+                <p> 1.The assessee is an indiduval.</p>
+                <p> 2.He has taken a loan for the purpose of purchase of an electric vehicle.For this
+                    purpose,"electric vehicle"means-</p>
+                <li>- a vehicle which is powered "excusively" by an electric motor whose traction energy is supplied
+                    excusively by traction battery installed in the vehicle,and
+                <li>- it has such electric regenerative braking system,which during braking provides for the
+                    conversion of vehicle kinetic energy into electric energy.
+                    as the word"exclusive"is used,interest on loan taken for purchase of a "hybrid car"(which
+                    derives some of its power from convetional engine)is not eligible for deduction.</li>
+                <p> 3.Loan is taken from a financial institution (i.e, a bank or any deposit taking NBFC or
+                    systematically important non-deposit taking NBFC).</p>
+                <p> 4.Loan is sanctioned during April 1,2019 and March 31,2023.</p>
+                <li>.Amount of deduction-If the above conditions are satisfied,the assessee can claim deduction under
+                    section 80EEB.Deduction is available in respect of interest payable on the above loan or
+                    Rs.1,50,000,whichever is less.Deduction is available for the assessment year 2020-21 and
+                    subsequent assessment years.</li>
+                <li>.Same interest is not deductible twice-if interest is claimed as deduction under section 80EEB,Such
+                    interest(or such portion of interest) is not again deductible under any other provision of the Act
+                    for the same or any other assessment year.</li>
+            </div>
+            <!---80TTA Deduction Start-->
+            <div class="tab-pane fade" id="nav-adding12" role="tabpanel" aria-labelledby="nav-adding-tab12"
+                tabindex="0">
+                <p><b>Deduction in respect of interest on deposits in savings accounts [sec.80TTA]</b></p>
+                <p><b>266.</b>Section 80TTA has been inserted with effect from the assessment year 2013-14.It provides a
+                    deduction
+                    up to Rs.10,000 in aggregate
+                    to an assessee (being an individualor a Hindu undivided family) in respect of any income by way of
+                    interest on
+                    deposits (not being time
+                    deposits) in a savings account with--</p>
+
+                <p>
+                <ol type="1">
+                    <li>a banking company;</li>
+                    <li>a co-operative society engaged in carrying on the business of banking (including a co-operative
+                        land
+                        mortgage bank or a co-operative
+                        land development bank);or</li>
+                    <li>a post office.</li>
+                </ol>
+                </p>
+
+                <li>The following points should be noted-</li>
+                <p>
+                <ol type="1">
+                    <li>From the assessment year 2019-20, the above deduction is not available in the case of a senior
+                        citizen who
+                        is eligible to claim
+                        deduction under section 80TTB.</li>
+                    <li>Where the aforesaid income is derived from any deposit in a savings account held by, or on
+                        behalf of a
+                        firm,an association of
+                        persons or a body of individuals,no deduction shall be allowed in respect of such income in
+                        computing the
+                        total income of any
+                        partner of the firm or any men=mber of the association or body.</li>
+                </ol>
+                </p>
+                <p><b>266.1 Post office saving bank interest exemption under section 10(15)(i)-</b>Post office savings
+                    bank
+                    intersest is exempt up to
+                    Rs.3,500(in an individual account)and Rs.7,000(in a joint account)under section 10(15)(i) by virtue
+                    of
+                    Notification No.32/2011, dated
+                    June 3,2011, read with Notification No.GSR607, dated June9,1989.The cumulative impact of sections
+                    10(15)(i)and
+                    80TTA is as follows-</p>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="co1"></th>
+                            <th>Up to the assessment year 2011-12 Rs.</th>
+                            <th>For the assessment year 2012-13 Rs.</th>
+                            <th>From the assessment year 2013-14 Rs.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <p>
+                                    Interest on post office saving bank [exemption under section 10(15)(i)]
+                                </p>
+                            </th>
+                            <th>Full exemption, nothing is taxable</th>
+                            <th>Exemption up to Rs.3,500 in a single account and Rs.7,000 in a joint account</th>
+                            <th>Exemption up to Rs.3,500 in a single account and Rs.7,000 in a joint account </th>
+                        </tr>
+                        <tr>
+                            <th>Interest on savings account with a bank, co-operative bank and post office (deduction
+                                under setion 80TTA)</th>
+                            <th>No deduction</th>
+                            <th>No deduction</th>
+                            <th>Deduction up to Rs.10,000</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!---80TTA Deduction End-->
+            <!---80U Deduction Start-->
+            <div class="tab-pane fade" id="nav-adding11" role="tabpanel" aria-labelledby="nav-adding-tab11"
+                tabindex="0">
+                <p><b>Deduction 80U</b></p>
+                <p><b>Deduction in case of a person with disability [Sec.80U]</b></p>
+                <p><b>268.</b>The provisions of section 80U are given below-</p>
+                <p><b>268.1 conditions-</b>Deduction is available if the following conditions are satisfied-</p>
+                <p><b>268.1-1 Individual-</b>The taxpayer is an individual (may be a citizen of india or foreign
+                    country).</p>
+                <p><b>268.1-2 resident in india-</b>He is resident in india (may be ordinarily resident or not
+                    ordinarily
+                    resident).Deduction
+                    under this section is not available if he is non-resident in india for the relevant assessment year.
+                </p>
+
+                <p><b>268.1-3 Person with disability-</b>The taxpayers suffers 40 per cent or more than 40 per cent of
+                    any
+                    disability given below-</p>
+                <p>
+                <ol type="i">
+                    <li>blindness;</li>
+                    <li>low vision;</li>
+                    <li>leprosy-cured;</li>
+                    <li>hearing impairment;</li>
+                    <li>locomotor disability;</li>
+                    <li>mental retardation;</li>
+                    <li>mental illness.</li>
+                </ol>
+                </p>
+
+                <li>Blindness-Blindness" refers to a condition where a person suffers from any of the following
+                    conditions, namely:-
+                </li>
+                <p>
+                <ol type="i">
+                    <li>total absence of sight; or</li>
+                    <li>visual acuity not exceeding 6/60 or 20/200 (snellen) in the better eye with correcting lenses:
+                        or</li>
+                    <li>limitation of the field of vision subtending an angle of 20 degree or worse.</li>
+                </ol>
+                </p>
+
+                <li>Low vision-"Person with low vision" means a person with impairment of visual functioning even after
+                    treatment or
+                    standard
+                    refractive correction but who uses or is potentially capable of using vison for the planning or
+                    execution of a
+                    task with
+                    appropriate assistive device.</li>
+                <li>Leprosy cured person- "Leprosy cured person" means any person who has been cured of leprosy but is
+                    suffering
+                    from-</li>
+
+                <p>
+                <ol type="i">
+                    <li>loss of sensation in hands or feet as well as loss of sensation and paresis in the eye and
+                        eye-lid but with
+                        no mainfest deformity;</li>
+                    <li>mainfest deformity and paresis but having sufficient mobility in their hands and feet to enable
+                        them to
+                        engage in normal
+                        economic activity;</li>
+                    <li>extreme physical deformity as well as advanced age which prevents him from undertaking any
+                        gainful
+                        occupation.</li>
+                </ol>
+                </p>
+
+                <li>Hearing impairmet-"Hearing impairment" means loss of sixty decibles or more in the better ear in the
+                    conversational range of frequencies.</li>
+                <li>Locomotor disability-"Locomotor disability"meansdisability of the bones, joints or muscles leading
+                    to
+                    substantial restriction of the movement
+                    of the limbs or any formof cerebral palsy.</li>
+                <li>Mental retardation-"Mental retradation" means a condition of arrested or incomplete development of
+                    mind of a
+                    person, which is specially
+                    characterised by subnormality of intelligence.</li>
+                <li>Mental illness-"Mental illness" means any mental disorder other than mental retardation.</li>
+                <li>Autism,cerebral plasy and multiple disability-From the assessment year 2005-06,autism,cerebral plasy
+                    and
+                    multiple disability have been included
+                    in the expression "person with disability".</li>
+
+                <p><b>268.1-4 certified By Medical Authority-</b>The taxpayer shall have to furnish a copy of the
+                    certificate [In
+                    Form No.10-IA Where the person is
+                    suffering from autism,cerebral plasy or in the notified from under person with Disabilities Act,
+                    1995 in any
+                    other case]issued by the medical
+                    authority along with the return of income. where the condition of disability requires reassessment,
+                    a fresh
+                    certificate from the medical authority
+                    shall have to be obtained after the expiry of the period mentioned on the original certificate in
+                    order to
+                    continue to claim the deduction.</p>
+                <p>"Medical authority" for this purpose means any hospital or institution specified by notification by
+                    the
+                    appropriate Government for the purpose of
+                    the persons with Disabilities (Equal opportunities, protections of Rights and Full Participation)
+                    Act, 1995.</p>
+                <p><b>268.2 Amount of deduction-</b>If the aforesaid conditions are satisfied, then a fixed deduction of
+                    Rs.75,000
+                    is available. A higher deduction of
+                    Rs.1,25,000 is allowed in respect of a person with severe disability (i.e., having any disability of
+                    80 per cent
+                    or above).</p>
+                <p><b>268-P1</b>X is a resident individual.He suffers from a severe disability as certified by medical
+                    authority. He
+                    is mainly dependent upon his brother
+                    Y for support and maintenance.Y annually incurs a sum of Rs.5,000 on medical treatment of X. Income
+                    of X and Y
+                    is Rs.10,000 and Rs.36,00,000. Find out
+                    the net income of X and Y for the assessment year2020-21.</p>
+
+                <p><b>SOLUTION:</b></p>
+                <table>
+                    <lo>
+                        <tr>
+                            <th>Gross total income</th>
+                            <th>X<li>Rs.</li>
+                            </th>
+                            <th>Y<li>Rs.</li>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Less:Deductions under sections 80C to 80U</th>
+                            <th>10,000</th>
+                            <th>36,00,000</th>
+                        </tr>
+                        <tr>
+                            <th>Under section 80DD</th>
+                            <th>---</th>
+                            <th>1,25,000</th>
+                        </tr>
+                        <tr>
+                            <th>Under section 80U</th>
+                            <th>---</th>
+                            <th>---</th>
+                        </tr>
+                        <tr>
+                            <th>Net income</th>
+                            <th>10,000</th>
+                            <th>34,75,000</th>
+                        </tr>
+                    </lo>
+                </table><br>
+                <p><b>Note-1</b>If deduction is claimed by X under section 80U then no deduction will be available to Y
+                    under
+                    section 80DD.Income of X is below Rs.2,50,000
+                    and is not chargeable to tax. X should not claim any deduction under section 80U.</p>
+                <p><b>Deductions from tax liability</b></p>
+                <p><b>269.</b>First determine net income and tax payable thereon at the rates mentioned in Annex 1. From
+                    the sum of
+                    tax so determined, deduct the following
+                    tax reliefs/tax rebates:</p>
+                <li>Rebate under section 86 in respect of share of profit from an association of persons [see para
+                    326.4-1].</li>
+            </div>
+            <!---80U Deduction End-->
+        </div>
+    </nav>
+    <!---Java Script Starts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <!--Java Script Ends-->
+</body>
+
+</html>
