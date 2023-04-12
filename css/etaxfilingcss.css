@@ -5,12 +5,20 @@
 	
 }*/
 
+th {
+    position: sticky;
+    top: 0px;
+    background-color: teal;
+
+}
 
 th,
 td {
 
     border: 1px solid;
-    font-weight: normal
+    font-weight: normal;
+    padding: 10px;
+
 }
 
 .div {
@@ -29,4 +37,19 @@ td {
     overflow-y: scroll;
     margin: 20px;
     overflow-x: scroll;
+}
+
+.outer-wrapper {
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+    margin: 20px;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+.table {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 0px;
+
 }
