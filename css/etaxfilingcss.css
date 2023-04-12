@@ -5,7 +5,7 @@
 	
 }*/
 
-.etaxTable,
+
 th,
 td {
 
@@ -23,17 +23,10 @@ td {
     right: 20px;
 }
 
-/*
-.etaxTable {
-    
-    border-collapse: collapse;
-    border-spacing: 2px;
-    
-    
-    text-indent: initial;
-    
-    border-color: grey;
-    border-collapse: collapse;
-    border-spacing: 0;
-    
-}*/
+
+.table-wrapper {
+    max-height: 300px;
+    overflow-y: scroll;
+    margin: 20px;
+    overflow-x: scroll;
+}
