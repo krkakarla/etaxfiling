@@ -46,3 +46,17 @@ td {
     border-radius: 5px;
     max-width: fit-content;
 }
+
+.inputbox {
+    background-color: lightgrey;
+    width: 600px;
+    height: auto;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+.row {
+    background-color: lightgrey;
+
+}

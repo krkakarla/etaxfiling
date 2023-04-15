@@ -3,8 +3,6 @@ function hciti() {
     var rd2 = document.getElementById("rd2");
     var hciti1
 
-
-
     if (rd1.checked == true)
         hciti1 = rd1.value;
     /*    alert("The chennel selected is:" + rd1.value); */
@@ -25,7 +23,7 @@ function HRACAL() {
     var basicfor = Number(basal * 0.40);
     var hciti2 = hciti();
 
-    alert("No Chaneek selected");
+    /*alert("No Chaneek selected");*/
 
     if (hciti2 == "MetroCity" && basicper <= HRALL)
         return Number(basicper + ehour);
@@ -37,3 +35,11 @@ function HRACAL() {
         return Number(HRALL + ehour);
 
 };
+
+function MAXHRA() {
+
+    var MAXHRA1 = HRACAL()
+
+    alert("You are advised to keep HRA amount " + " " + MAXHRA1 + " " + " Rs only so that you can save maximum amount. Here you have to pay TDS amount of " + MAXHRA1 * 0.05 + " " + "rupees");
+
+}
