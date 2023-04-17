@@ -40,6 +40,6 @@ function MAXHRA() {
 
     var MAXHRA1 = HRACAL()
 
-    alert("You are advised to keep HRA amount " + " " + MAXHRA1 + " " + " Rs only so that you can save maximum amount. Here you have to pay TDS amount of " + MAXHRA1 * 0.05 + " " + "rupees");
+    alert("You are advised to keep House Rent amount of" + " " + MAXHRA1 + " " + " Rs only so that you can save maximum amount.");
 
 }
