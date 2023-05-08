@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-<header>
+
+<head>
     <meta charset="utf-8">
-    <title>etaxfiling</title>
+    <title>Allowance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/etaxfilingcss.css">
-</header>
+</head>
 
-<body>
+<body background-color: lightblue;>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">EtaxFiling</a>
@@ -174,90 +175,84 @@
             </div>
         </div>
     </nav>
+    <br>
     <div class="container-fluid">
-        <p class="fst-normal"> Below are list of Trading Strategies </p>
+        <p>We will help you to finaize the best housing partner with low interest and with best terms and conditions.
+            Right now, we will get the quatation from different banking partner like 1. ICICI Bank 2. ICICI House Loans
+            3. HDFC House Finance 4. HDFC Bank 5. LIC House Finance and Others
+        </p><br>
+        <h5>Please share the below Details </h5>
+        <div class="container">
+            <h5>Home Loan Application</h5>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <th>Client Name:</th>
+                        <td><input type="text" name="clientName" required></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile:</th>
+                        <td><input type="tel" name="mobile" required></td>
+                    </tr>
+                    <tr>
+                        <th>Profession:</th>
+                        <td><input type="text" name="profession" required></td>
+                    </tr>
+                    <tr>
+                        <th>Annual income:</th>
+                        <td><input type="text" name="annualIncome" required></td>
+                    </tr>
+                    <tr>
+                        <th>PAN:</th>
+                        <td><input type="text" name="pan" required></td>
+                    </tr>
+                    <tr>
+                        <th>Existing EMI:</th>
+                        <td><input type="text" name="existingEmi" required></td>
+                    </tr>
+                    <tr>
+                        <th>Job location:</th>
+                        <td><input type="text" name="jobLocation" required></td>
+                    </tr>
+                    <tr>
+                        <th>Loan amount required:</th>
+                        <td><input type="text" name="loanAmount" required></td>
+                    </tr>
+                    <tr>
+                        <th>Loan purpose:</th>
+                        <td><input type="text" name="loanPurpose" required></td>
+                    </tr>
+                    <tr>
+                        <th>Loan Location:</th>
+                        <td><input type="text" name="loanLocation" required></td>
+                    </tr>
+                    <tr>
+                        <th>Client Location:</th>
+                        <td><input type="text" name="clientLocation" required></td>
+                    </tr>
+                </table><br>
 
-        <ol>
-            <li><b>Straddle</b> : Straddle involves buying a call and put with the same strike price and same expire
-                date.
-            </li><br>
-            <li><b>Strangle</b> : Strangle Invoices buying a put and call with the different strike price and same
-                expire
-                date.</li><br>
-            <li><b>Strips</b> : Strip involves selling one call and two puts with the same strike price and same expiry
-                date.</li><br>
-            <li><b>Straps</b> : Strap involves selling two calls and one put with the same strike price and same expire
-                date.</li><br>
-        </ol>
-
-        <P>
-        <ol>
-            <ul><b><u>Straddle</u></b></ul><br>
-            <li><b>Meaning:</b> The Investor Buy/Sell both a Call Options and a Put Option for the Same Strike
-                price
-                with the same expiry date.</li><br>
-            <li><b>Basis:</b></li>
-            <ol type="a">
-                <li>Investor expect extreme volatility in the Market.</li>
-                <li>Direction of movement in stock prices is not expected to be fixed.</li>
-                <li>The Options are under valued and the market is expected to become Bullish.</li> <br>
-            </ol>
-            <li><b>Benefits:</b></li>
-            <ol type="a">
-                <li>Generation of Income in the form of Premium.</li>
-                <li>Profit Potential Open ended in either direction.</li>
-                <li>Maximum loss limited to the premium paid.</li><br>
-            </ol>
-            <li><b>Short Straddles Rules:</b></li>
-            <ul>Short ATM Call and Put</ul>
-            <ul>Book Profit at 25% of Max Profit</ul>
-            <ul>Adjust at 25 positional delta breach</ul>
-            <ul>SL is 50% of Max. Profit</ul>
-        </ol>
-        <table class="table table-bordered border=" 1" cellspacing="0">
-            <tr>
-                <th colspan="3"> Type of Straddles</th>
-
-            </tr>
-            <tr>
-                <th>Areas</th>
-                <th>Long Straddle</th>
-                <th>Short Straddle</th>
-                </th>
-            </tr>
-            <tr>
-                <td>Strategy</td>
-                <td>Buy a Call, Buy a Put, at the same Expiry Date with the same Exercise Price.</td>
-                <td>Write a Call, Write a Put, at the same Expiry Date with the same Exercise Price.</td>
-            </tr>
-            <tr>
-                <td>Condition</td>
-                <td>If the expected spot price on the Expiry Date will be far away from the Strike Price.</td>
-                <td>If the expected spot price on the expiry date is within certain limits on either side of the
-                    Strike Price.</td>
-            </tr>
-            <tr>
-                <td>Profilt Potential</td>
-                <td>Ability to make Profit is Unlimited.</td>
-                <td>The amount of Profit is Limited.</td>
-            </tr>
-            <tr>
-                <td>Limitation of Loss</td>
-                <td>The amount of Loss is limited to the amount of the Total Premium Paid</td>
-                <td>Loss is Unlimited.</td>
-            </tr>
-        </table>
-
-        <P>Below is the sample of Long Straddle. Today Nifty is trading at 17624 points and we have Options CE and PE at
-            17600 points </P>
-        <img src="img/LongStraddle1.jpg" width="100%" alt="Sharekhan Image">
-        <P>In this example, the spot price of NIFTY is 17624 points and we have taken buy CE and buy PE with same price
-            17600 here total premium paid is 333.7 points for CE and 283.70 points for PE so total amount paid is 617.40
-            points [Total amount in cash 617*50 = 30850 rs]</P>
-        <P> If the month end NIFTY Close between 17000 to 18200 then we will loss amount. We will get profit only if
-            Nifty
-            move more than 617 point up side either downside </P>
+                <h2>Partner Details</h2>
+                <table>
+                    <tr>
+                        <th>Partner Name:</th>
+                        <td><input type="text" name="partnerName" required></td>
+                    </tr>
+                    <tr>
+                        <th>Partner Code:</th>
+                        <td><input type="text" name="partnerCode" required></td>
+                    </tr>
+                    <tr>
+                        <th>Partner Contact Number:</th>
+                        <td><input type="tel" name="partnerContactNumber" required></td>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
     </div>
+
     <div class="row">
         <div class="col">
             <ol><b>Head Office Address</b>
@@ -269,7 +264,7 @@
             </ol>
             <!----<iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2652310176495!2d78.40056899999999!3d17.494847900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91639bd72c0f%3A0x96dcfde7d3623e59!2sCabs%20For%20Vijayawada!5e0!3m2!1sen!2sin!4v1669300043408!5m2!1sen!2sin"
-            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            width="200" height="150" styssqxhyhhggtryyye3fle="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>-->
             <div>
             </div>
@@ -286,12 +281,19 @@
             </ol>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/hra.js"></script>
+
+
 </body>
+
 
 </html>
