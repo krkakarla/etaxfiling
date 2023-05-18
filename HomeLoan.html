@@ -193,74 +193,80 @@
         <h5>Please share the below Details </h5>
         <div class="container">
             <h5>Home Loan Application</h5>
-            <form action="#" method="post">
+            <form onsubmit="HRACAL()">
                 <table>
                     <tr>
                         <th>Client Name:</th>
-                        <td><input type="text" name="clientName" required></td>
+                        <td><input type=" text" name="clientName" id="clientName" required>
+                        </td>
                     </tr>
                     <tr>
                         <th>Mobile:</th>
-                        <td><input type="tel" name="mobile" required></td>
+                        <td><input type="tel" name="mobile" id="mobile" required></td>
                     </tr>
                     <tr>
                         <th>Profession:</th>
-                        <td><input type="text" name="profession" required></td>
+                        <td><input type="text" name="profession" id="profession" required></td>
                     </tr>
                     <tr>
                         <th>Annual income:</th>
-                        <td><input type="text" name="annualIncome" required></td>
+                        <td><input type="text" name="annualIncome" id="annualIncome" required></td>
                     </tr>
                     <tr>
                         <th>PAN:</th>
-                        <td><input type="text" name="pan" required></td>
+                        <td><input type="text" name="pan" id="pan" required></td>
                     </tr>
                     <tr>
                         <th>Existing EMI:</th>
-                        <td><input type="text" name="existingEmi" required></td>
+                        <td><input type="text" name="existingEmi" id="existingEmi" required></td>
                     </tr>
                     <tr>
                         <th>Job location:</th>
-                        <td><input type="text" name="jobLocation" required></td>
+                        <td><input type="text" name="jobLocation" id="jobLocation" required></td>
                     </tr>
                     <tr>
-                        <th>Loan amount required:</th>
-                        <td><input type="text" name="loanAmount" required></td>
-                    </tr>
-                    <tr>
-                        <th>Loan purpose:</th>
-                        <td><input type="text" name="loanPurpose" required></td>
+                        <th>Loan Type:</th>
+                        <td><input type="text" name="loanAmount" id="loanAmount" required></td>
                     </tr>
                     <tr>
                         <th>Loan Location:</th>
-                        <td><input type="text" name="loanLocation" required></td>
+                        <td><input type="text" name="loanLocation" id="loanLocation" required></td>
                     </tr>
                     <tr>
                         <th>Client Location:</th>
-                        <td><input type="text" name="clientLocation" required></td>
+                        <td><input type="text" name="clientLocation" id="clientLocation" required></td>
                     </tr>
                 </table><br>
-
                 <h2>Partner Details</h2>
                 <table>
-                    <tr>
+                    <!----<tr>
                         <th>Partner Name:</th>
-                        <td><input type="text" name="partnerName" required></td>
-                    </tr>
+                        <td><input type="text" name="partnerName" id="partnerName" value="Gnanesh"></td>
+                    </tr>-->
                     <tr>
                         <th>Partner Code:</th>
-                        <td><input type="text" name="partnerCode" required></td>
+                        <td><input type="text" name="partnerCode" id="partnerCode" value="GALI1346"></td>
                     </tr>
                     <tr>
                         <th>Partner Contact Number:</th>
-                        <td><input type="tel" name="partnerContactNumber" required></td>
+                        <td><input type="tel" name="partnerContactNumber" id="partnerContactNumber" value="9849811706">
+                        </td>
                     </tr>
                 </table>
                 <br>
-                <input type="submit" value="Submit Application">
+                <input type="submit" value="Submit Application" onclick="Homeloan()">
             </form>
+            <br>
         </div>
     </div>
+
+    <!-----Whatup's Starts---->
+    <div class="whatsapp_float">
+        <a href="https://wa.me/919849811706" target="_blank"><img
+                src="https://etaxfiling.s3.ap-south-1.amazonaws.com/img/img/Whatsup.jpg" width="50px"
+                class="whatsapp_float_btn" /></a>
+    </div>
+    <!-----Whatup's Ends--->
 
     <div class="row">
         <div class="col">
@@ -299,7 +305,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/hra.js"></script>
+    <script type="text/javascript" src="js/homeloan.js"></script>
 
 
 </body>
