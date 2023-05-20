@@ -8,6 +8,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/etaxfilingcss.css">
+    <style>
+        td:first-child{
+            width: max-content;
+        }
+        .big-table th:first-child{
+            min-width: 35em;
+        }
+        .row{
+            margin: 0;
+        }
+        .table{
+            width: max-content;
+        }
+        .big-table{
+            width: auto;
+            min-width: min-content;
+        }
+        .text-primary{
+            max-width: 10em;
+        }
+        .scroll-box{
+            overflow-x: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -220,323 +244,327 @@
                 table to get the idea how new change will help to get more benefit.
             </ul></br>
             <div>
-                <table class="table table-bordered border= 1" cellspacing="0">
-                    <tr>
-                        <th class="text-primary" colspan="2"><b>Particulars</b></th>
-                        <th class="text-primary"><b>Central Government Employer Rs.</b></th>
-                        <th class="text-primary"><b>Private Employer (Employer has opted for NPS)</b></th>
-                        <th class="text-primary"><b>Private Employer(Employer has opted for PPF)</b></th>
-                        <th class="text-primary"><b>Business People</b></th>
-                    </tr>
-                    <tr>
-                        <th colspan="2">Basic salary and dearness allowance</th>
-                        <th>5,50,000</th>
-                        <th>5,50,000</th>
-                        <th>5,50,000</th>
-                        <th>Nil</th>
-                    </tr>
+                <div class="scroll-box">
+                    <table class="table table-bordered border= 1 big-table" cellspacing="0">
+                        <tr>
+                            <th class="text-primary" colspan="2"><b>Particulars</b></th>
+                            <th class="text-primary"><b>Central Government Employer Rs.</b></th>
+                            <th class="text-primary"><b>Private Employer (Employer has opted for NPS)</b></th>
+                            <th class="text-primary"><b>Private Employer (Employer has opted for PPF)</b></th>
+                            <th class="text-primary"><b>Business People</b></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Basic salary and dearness allowance</th>
+                            <th>5,50,000</th>
+                            <th>5,50,000</th>
+                            <th>5,50,000</th>
+                            <th>Nil</th>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Special allowance</th>
-                        <th>1,00,000</th>
-                        <th>1,00,000</th>
-                        <th>1,00,000</th>
-                        <th>Nil</th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Special allowance</th>
+                            <th>1,00,000</th>
+                            <th>1,00,000</th>
+                            <th>1,00,000</th>
+                            <th>Nil</th>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Employer's contribution towards NPS (13% of Rs.5,50,000)</th>
-                        <th>71,500</th>
-                        <th>71,500</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Employer's contribution towards NPS (13% of Rs.5,50,000)</th>
+                            <th>71,500</th>
+                            <th>71,500</th>
+                            <th>Nil</th>
+                            <th>Nil</th>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Employer's contribution towards RPF (in excess of 12% of salary)</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                        <th>5,500</th>
-                        <th>Nil</th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Employer's contribution towards RPF (in excess of 12% of salary)</th>
+                            <th>Nil</th>
+                            <th>Nil</th>
+                            <th>5,500</th>
+                            <th>Nil</th>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Gross salary</th>
-                        <th>7,21,500</th>
-                        <th>7,21,500</th>
-                        <th>6,55,500</th>
-                        <th>Nil</th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Gross salary</th>
+                            <th>7,21,500</th>
+                            <th>7,21,500</th>
+                            <th>6,55,500</th>
+                            <th>Nil</th>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Less: standard deduction</th>
-                        <th>50,000</th>
-                        <th>50,000</th>
-                        <th>50,000</th>
-                        <th>Nil</th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Less: standard deduction</th>
+                            <th>50,000</th>
+                            <th>50,000</th>
+                            <th>50,000</th>
+                            <th>Nil</th>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Income under the head "salaries"</th>
-                        <th>6,71,500</th>
-                        <th>6,71,500</th>
-                        <th>6,05,500</th>
-                        <th>Nil</th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Income under the head "salaries"</th>
+                            <th>6,71,500</th>
+                            <th>6,71,500</th>
+                            <th>6,05,500</th>
+                            <th>Nil</th>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Business income</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                        <th>8,10,000</th>>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Business income</th>
+                            <th>Nil</th>
+                            <th>Nil</th>
+                            <th>Nil</th>
+                            <th>8,10,000</th>>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Income from other sources</th>
-                        <th>2,10,000</th>
-                        <th>2,10,000</th>
-                        <th>2,10,000</th>
-                        <th>2,10,000</th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Income from other sources</th>
+                            <th>2,10,000</th>
+                            <th>2,10,000</th>
+                            <th>2,10,000</th>
+                            <th>2,10,000</th>
+                        </tr>
 
-                    <tr>
-                        <th colspan="2">Gross total income (GTI)</th>
-                        <th>8,81,500</th>
-                        <th>8,81,500</th>
-                        <th>8,15,500</th>
-                        <th>10,20,000</th>
-                    </tr>
-                    <th>List of Deduction</th>
-                    <tr>
-                        <th style="background-color: lightblue" ;>
-                            DEDUCTIONS NOT COVERED BY CUMULATIVE CEILING- Under section 80CCD(1B) (contribution by the
-                            assessee
-                            towards NPS up to Rs.50,000)
-                        </th>
-                        <th>(a)</th>
-                        <th>50,000</th>
-                        <th>50,000</th>
-                        <th>40,000</th>
-                        <th>50,000</th>
-                    </tr>
+                        <tr>
+                            <th colspan="2">Gross total income (GTI)</th>
+                            <th>8,81,500</th>
+                            <th>8,81,500</th>
+                            <th>8,15,500</th>
+                            <th>10,20,000</th>
+                        </tr>
+                        <th>List of Deduction</th>
+                        <tr>
+                            <th style="background-color: lightblue" ;>
+                                DEDUCTIONS NOT COVERED BY CUMULATIVE CEILING- Under section 80CCD(1B) (contribution by the
+                                assessee
+                                towards NPS up to Rs.50,000)
+                            </th>
+                            <th>(a)</th>
+                            <th>50,000</th>
+                            <th>50,000</th>
+                            <th>40,000</th>
+                            <th>50,000</th>
+                        </tr>
 
-                    <tr>
-                        <th>Under section 80CCD(2) [Contribution by employer towards NPS, subject to maximum of 14% of
-                            salary in
-                            the case of central Government employee
-                            or 10% of salary in the case of any other employee]</th>
-                        <th>(b)</th>
-                        <th>71,500</th>
-                        <th>55,000</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                    </tr>
+                        <tr>
+                            <th>Under section 80CCD(2) [Contribution by employer towards NPS, subject to maximum of 14% of
+                                salary in
+                                the case of central Government employee
+                                or 10% of salary in the case of any other employee]</th>
+                            <th>(b)</th>
+                            <th>71,500</th>
+                            <th>55,000</th>
+                            <th>Nil</th>
+                            <th>Nil</th>
+                        </tr>
 
-                    <tr>
-                        <th>Under section 80D (mediclaim insurance premium) (limited to Rs.25,000 in the case of a
-                            person who is
-                            not a senior citizen)</th>
-                        <th>(c)</th>
-                        <th>25,000</th>
-                        <th>25,000</th>
-                        <th>25,000</th>
-                        <th>25,000</th>
-                    </tr>
+                        <tr>
+                            <th>Under section 80D (mediclaim insurance premium) (limited to Rs.25,000 in the case of a
+                                person who is
+                                not a senior citizen)</th>
+                            <th>(c)</th>
+                            <th>25,000</th>
+                            <th>25,000</th>
+                            <th>25,000</th>
+                            <th>25,000</th>
+                        </tr>
 
-                    <tr>
-                        <th style="background-color: lightgreen" ;>DEDUCTIONS COVERED BY CUMULATIVE CEILING OF
-                            Rs.1,50,000-Under section 80C (ppf and
-                            contribution
-                            towards recognized
-                            provide fund)</th>
-                        <th>(d)</th>
-                        <th>(96,000)</th>
-                        <th>(96,000)</th>
-                        <th>(1,50,000)</th>
-                        <th>(30,000)</th>
-                    </tr>
+                        <tr>
+                            <th style="background-color: lightgreen" ;>DEDUCTIONS COVERED BY CUMULATIVE CEILING OF
+                                Rs.1,50,000-Under section 80C (ppf and
+                                contribution
+                                towards recognized
+                                provide fund)</th>
+                            <th>(d)</th>
+                            <th>(96,000)</th>
+                            <th>(96,000)</th>
+                            <th>(1,50,000)</th>
+                            <th>(30,000)</th>
+                        </tr>
 
-                    <tr>
-                        <th>Under section 80CCC (annuity plan of LIC)</th>
-                        <th>(e)</th>
-                        <th>(5,000)</th>
-                        <th>(5,000)</th>
-                        <th>(5,000)</th>
-                        <th>(5,000)</th>
-                    </tr>
+                        <tr>
+                            <th>Under section 80CCC (annuity plan of LIC)</th>
+                            <th>(e)</th>
+                            <th>(5,000)</th>
+                            <th>(5,000)</th>
+                            <th>(5,000)</th>
+                            <th>(5,000)</th>
+                        </tr>
 
-                    <tr>
-                        <th>Under section 80CCD (1) [contribution of X towards NPS (excluding the contribution
-                            considered above
-                            in section 80CCD(1B)), subject
-                            to a maximum of 10% of salary in the case of an employee or 20% of GTI in the case of a
-                            person other
-                            than employee]</th>
-                        <th>(f)</th>
-                        <th>(54,000)</th>
-                        <th>(54,000)</th>
-                        <th>Nil</th>
-                        <th>(2,04,000)</th>
-                    </tr>
+                        <tr>
+                            <th>Under section 80CCD (1) [contribution of X towards NPS (excluding the contribution
+                                considered above
+                                in section 80CCD(1B)), subject
+                                to a maximum of 10% of salary in the case of an employee or 20% of GTI in the case of a
+                                person other
+                                than employee]</th>
+                            <th>(f)</th>
+                            <th>(54,000)</th>
+                            <th>(54,000)</th>
+                            <th>Nil</th>
+                            <th>(2,04,000)</th>
+                        </tr>
 
-                    <tr>
-                        <th>Maximum deductible amount [i.e.,(d) + (e) + (f), subject to a maximum of Rs.1,50,000]</th>
-                        <th>(g)</th>
-                        <th>1,50,000</th>
-                        <th>1,50,000</th>
-                        <th>1,50,000</th>
-                        <th>1,50,000</th>
-                    </tr>
+                        <tr>
+                            <th>Maximum deductible amount [i.e.,(d) + (e) + (f), subject to a maximum of Rs.1,50,000]</th>
+                            <th>(g)</th>
+                            <th>1,50,000</th>
+                            <th>1,50,000</th>
+                            <th>1,50,000</th>
+                            <th>1,50,000</th>
+                        </tr>
 
-                    <tr>
-                        <th>Net income [GTI-(a)-(b)-(c)-(g)]</th>
-                        <th></th>
-                        <th>5,85,000</th>
-                        <th>6,01,500</th>
-                        <th>6,00,500</th>
-                        <th>7,95,000</th>
-                    </tr>
-                </table>
+                        <tr>
+                            <th>Net income [GTI-(a)-(b)-(c)-(g)]</th>
+                            <th></th>
+                            <th>5,85,000</th>
+                            <th>6,01,500</th>
+                            <th>6,00,500</th>
+                            <th>7,95,000</th>
+                        </tr>
+                    </table> 
+                </div>
                 <li class="text-primary"><b>Tax Planning with 20L Salary</b></li>
             </div>
             </br>
             <div>
-                <table class="table table-bordered border= 1" cellspacing="0">
-                    <tr>
+                <div class="scroll-box">
+                    <table class="table table-bordered border= 1" cellspacing="0">
+                        <tr>
 
-                        <th style="background-color: lightblue" ;><b>Description</b></th>
-                        <th style="background-color: lightblue" ;><b>Gross</b></th>
-                        <th style="background-color: lightblue" ;><b>Exempt</b></th>
-                        <th style="background-color: lightblue" ;><b>Taxable</b></th>
-                    </tr>
-                    <tr>
-                        <td>Basic salary</td>
-                        <td>780,684</td>
-                        <td></td>
-                        <td>780,684</td>
-                    </tr>
-                    <tr>
-                        <td>House rent allow</td>
-                        <td>3,40,348</td>
-                        <td>3,40,348</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>special allowances</td>
-                        <td>4,65,425</td>
-                        <td>2,00,000</td>
-                        <td>2,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Driver allowance</td>
-                        <td>1,18,000</td>
-                        <td>1,18,000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>fuel allowance</td>
-                        <td>1,47,500</td>
-                        <td>1,47,500</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Car maintenance</td>
-                        <td>29,500</td>
-                        <td>29,500</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>other allowance</td>
-                        <td>90,000</td>
-                        <td></td>
-                        <td>90,000</td>
-                    </tr>
-                    <tr>
-                        <td>Leave Travel allowance</td>
-                        <td>90,060</td>
-                        <td>90,060</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Books and periodicals</td>
-                        <td>30,000</td>
-                        <td>30,000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>wellness&Fitness</td>
-                        <td>87,655</td>
-                        <td></td>
-                        <td>87,655</td>
-                    </tr>
-                    <tr>
-                        <td>Food allowance</td>
-                        <td>36,000</td>
-                        <td>36,000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Taxable salary before Deduction</td>
-                        <td>22,15,172</td>
-                        <td>9,91,408</td>
-                        <td>11,58,339</td>
-                    </tr>
-                    <tr>
-                        <td>80C,80CCCand80CCD(1)</td>
-                        <td></td>
-                        <td></td>
-                        <td>-1,50,000</td>
-                    </tr>
-                    <tr>
-                        <td>80CCD 1B ( Employee Contribution Pri Emp and Gov Max 50,000 rupees)</td>
-                        <td></td>
-                        <td></td>
-                        <td>-50,000</td>
-                    </tr>
-                    <tr>
-                        <td>80CCD2 (Employer Contribution Pri Emp 10% and Gov Emp 15% on Basic)</td>
-                        <td></td>
-                        <td></td>
-                        <td>-50,000</td>
-                    </tr>
-                    <tr>
-                        <td>80D </td>
-                        <td></td>
-                        <td></td>
-                        <td>-50,000</td>
-                    </tr>
-                    <tr>
-                        <td>80EEA</td>
-                        <td></td>
-                        <td></td>
-                        <td>-1,50,000</td>
-                    </tr>
-                    <tr>
-                        <td>standard Deduction</td>
-                        <td></td>
-                        <td></td>
-                        <td>-50,000</td>
-                    </tr>
-                    <tr>
-                        <td>salary income after Deduction</td>
-                        <td></td>
-                        <td></td>
-                        <td>6,58,339</td>
-                    </tr>
-                    <tr>
-                        <td>House rent Loss</td>
-                        <td></td>
-                        <td></td>
-                        <td>-2,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Taxable income</td>
-                        <td>22,15,172</td>
-                        <td></td>
-                        <td>4,58,339</td>
-                    </tr>
-                </table>
+                            <th style="background-color: lightblue" ;><b>Description</b></th>
+                            <th style="background-color: lightblue" ;><b>Gross</b></th>
+                            <th style="background-color: lightblue" ;><b>Exempt</b></th>
+                            <th style="background-color: lightblue" ;><b>Taxable</b></th>
+                        </tr>
+                        <tr>
+                            <td>Basic salary</td>
+                            <td>780,684</td>
+                            <td></td>
+                            <td>780,684</td>
+                        </tr>
+                        <tr>
+                            <td>House rent allow</td>
+                            <td>3,40,348</td>
+                            <td>3,40,348</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>special allowances</td>
+                            <td>4,65,425</td>
+                            <td>2,00,000</td>
+                            <td>2,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Driver allowance</td>
+                            <td>1,18,000</td>
+                            <td>1,18,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>fuel allowance</td>
+                            <td>1,47,500</td>
+                            <td>1,47,500</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Car maintenance</td>
+                            <td>29,500</td>
+                            <td>29,500</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>other allowance</td>
+                            <td>90,000</td>
+                            <td></td>
+                            <td>90,000</td>
+                        </tr>
+                        <tr>
+                            <td>Leave Travel allowance</td>
+                            <td>90,060</td>
+                            <td>90,060</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Books and periodicals</td>
+                            <td>30,000</td>
+                            <td>30,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>wellness&Fitness</td>
+                            <td>87,655</td>
+                            <td></td>
+                            <td>87,655</td>
+                        </tr>
+                        <tr>
+                            <td>Food allowance</td>
+                            <td>36,000</td>
+                            <td>36,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Taxable salary before Deduction</td>
+                            <td>22,15,172</td>
+                            <td>9,91,408</td>
+                            <td>11,58,339</td>
+                        </tr>
+                        <tr>
+                            <td>80C,80CCCand80CCD(1)</td>
+                            <td></td>
+                            <td></td>
+                            <td>-1,50,000</td>
+                        </tr>
+                        <tr>
+                            <td>80CCD 1B ( Employee Contribution Pri Emp and Gov Max 50,000 rupees)</td>
+                            <td></td>
+                            <td></td>
+                            <td>-50,000</td>
+                        </tr>
+                        <tr>
+                            <td>80CCD2 (Employer Contribution Pri Emp 10% and Gov Emp 15% on Basic)</td>
+                            <td></td>
+                            <td></td>
+                            <td>-50,000</td>
+                        </tr>
+                        <tr>
+                            <td>80D </td>
+                            <td></td>
+                            <td></td>
+                            <td>-50,000</td>
+                        </tr>
+                        <tr>
+                            <td>80EEA</td>
+                            <td></td>
+                            <td></td>
+                            <td>-1,50,000</td>
+                        </tr>
+                        <tr>
+                            <td>standard Deduction</td>
+                            <td></td>
+                            <td></td>
+                            <td>-50,000</td>
+                        </tr>
+                        <tr>
+                            <td>salary income after Deduction</td>
+                            <td></td>
+                            <td></td>
+                            <td>6,58,339</td>
+                        </tr>
+                        <tr>
+                            <td>House rent Loss</td>
+                            <td></td>
+                            <td></td>
+                            <td>-2,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Taxable income</td>
+                            <td>22,15,172</td>
+                            <td></td>
+                            <td>4,58,339</td>
+                        </tr>
+                    </table>
+                </div>
                 <p>Under section 80CCD(1B)(Contribution by the assessee towards NPS up toRS,50,000)</p>
                 <p>Under section 80CCD(2)(contribution by employer towards NPS,subject to maximum of 14%of salary in
                     cases of
@@ -547,141 +575,143 @@
                     a senior citizen)</p>
             </div>
             <div>
-                <table class="table table-bordered border= 1" cellspacing="0">
-                    <tr>
+                <div class="scroll-box">
+                    <table class="table table-bordered border= 1" cellspacing="0">
+                        <tr>
 
-                        <th><b>Description</b></th>
-                        <th><b>Gross</b></th>
-                        <th><b>Exempt</b></th>
-                        <th><b>Taxable</b></th>
-                    </tr>
-                    <tr>
-                        <td>Basic salary</td>
-                        <td>780,684</td>
-                        <td>Nil</td>
-                        <td>780,684</td>
-                    </tr>
-                    <tr>
-                        <td>House rent allow</td>
-                        <td>340,348</td>
-                        <td>340,348</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>special allowances</td>
-                        <td>465425</td>
-                        <td>200000</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-                        <td>Driver allowance</td>
-                        <td>11800</td>
-                        <td>11800</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>fuel allowance</td>
-                        <td>147500</td>
-                        <td>147500</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>Car maintenance</td>
-                        <td>29500</td>
-                        <td>29500</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>other allowance</td>
-                        <td>90000</td>
-                        <td>Nil</td>
-                        <td>90000</td>
-                    </tr>
-                    <tr>
-                        <td>Leave Travel allowance</td>
-                        <td>90060</td>
-                        <td>90060</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>Books and periodicals</td>
-                        <td>30000</td>
-                        <td>30000</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>wellness&Fitness</td>
-                        <td>87655</td>
-                        <td>Nil</td>
-                        <td>87655</td>
-                    </tr>
-                    <tr>
-                        <td>Food allowance</td>
-                        <td>36000</td>
-                        <td>36000</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>Taxable salary before Deduction</td>
-                        <td>2,215,172</td>
-                        <td>991,408</td>
-                        <td>1,158,339</td>
-                    </tr>
-                    <tr>
-                        <td>80C,80CCCand80CCD(1)</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-150000</td>
-                    </tr>
-                    <tr>
-                        <td>80CCD 1B</td>
-                        <td>Nil</td>
-                        <td>NIl</td>
-                        <td>-50000</td>
-                    </tr>
-                    <tr>
-                        <td>80CCD2</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-50000</td>
-                    </tr>
-                    <tr>
-                        <td>80D</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-50000</td>
-                    </tr>
-                    <tr>
-                        <td>80EEA</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-150000</td>
-                    </tr>
-                    <tr>
-                        <td>standard Deduction</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-50000</td>
-                    </tr>
-                    <tr>
-                        <td>salary income after Deduction</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>658,339</td>
-                    </tr>
-                    <tr>
-                        <td>House rent Loss</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-200000</td>
-                    </tr>
-                    <tr>
-                        <td>Taxable income</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>458,339</td>
-                    </tr>
-                </table>
+                            <th><b>Description</b></th>
+                            <th><b>Gross</b></th>
+                            <th><b>Exempt</b></th>
+                            <th><b>Taxable</b></th>
+                        </tr>
+                        <tr>
+                            <td>Basic salary</td>
+                            <td>780,684</td>
+                            <td>Nil</td>
+                            <td>780,684</td>
+                        </tr>
+                        <tr>
+                            <td>House rent allow</td>
+                            <td>340,348</td>
+                            <td>340,348</td>
+                            <td>Nil</td>
+                        </tr>
+                        <tr>
+                            <td>special allowances</td>
+                            <td>465425</td>
+                            <td>200000</td>
+                            <td>200000</td>
+                        </tr>
+                        <tr>
+                            <td>Driver allowance</td>
+                            <td>11800</td>
+                            <td>11800</td>
+                            <td>Nil</td>
+                        </tr>
+                        <tr>
+                            <td>fuel allowance</td>
+                            <td>147500</td>
+                            <td>147500</td>
+                            <td>Nil</td>
+                        </tr>
+                        <tr>
+                            <td>Car maintenance</td>
+                            <td>29500</td>
+                            <td>29500</td>
+                            <td>Nil</td>
+                        </tr>
+                        <tr>
+                            <td>other allowance</td>
+                            <td>90000</td>
+                            <td>Nil</td>
+                            <td>90000</td>
+                        </tr>
+                        <tr>
+                            <td>Leave Travel allowance</td>
+                            <td>90060</td>
+                            <td>90060</td>
+                            <td>Nil</td>
+                        </tr>
+                        <tr>
+                            <td>Books and periodicals</td>
+                            <td>30000</td>
+                            <td>30000</td>
+                            <td>Nil</td>
+                        </tr>
+                        <tr>
+                            <td>wellness&Fitness</td>
+                            <td>87655</td>
+                            <td>Nil</td>
+                            <td>87655</td>
+                        </tr>
+                        <tr>
+                            <td>Food allowance</td>
+                            <td>36000</td>
+                            <td>36000</td>
+                            <td>Nil</td>
+                        </tr>
+                        <tr>
+                            <td>Taxable salary before Deduction</td>
+                            <td>2,215,172</td>
+                            <td>991,408</td>
+                            <td>1,158,339</td>
+                        </tr>
+                        <tr>
+                            <td>80C,80CCCand80CCD(1)</td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>-150000</td>
+                        </tr>
+                        <tr>
+                            <td>80CCD 1B</td>
+                            <td>Nil</td>
+                            <td>NIl</td>
+                            <td>-50000</td>
+                        </tr>
+                        <tr>
+                            <td>80CCD2</td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>-50000</td>
+                        </tr>
+                        <tr>
+                            <td>80D</td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>-50000</td>
+                        </tr>
+                        <tr>
+                            <td>80EEA</td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>-150000</td>
+                        </tr>
+                        <tr>
+                            <td>standard Deduction</td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>-50000</td>
+                        </tr>
+                        <tr>
+                            <td>salary income after Deduction</td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>658,339</td>
+                        </tr>
+                        <tr>
+                            <td>House rent Loss</td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>-200000</td>
+                        </tr>
+                        <tr>
+                            <td>Taxable income</td>
+                            <td>Nil</td>
+                            <td>Nil</td>
+                            <td>458,339</td>
+                        </tr>
+                    </table>
+                </div>
                 <p>Under section 80CCD(1B)(Contribution by the assessee towards NPS up toRS,50,000)</p>
                 <p>Under section 80CCD(2)(contribution by employer towards NPS,subject to maximum of 14%of salary in
                     cases of
