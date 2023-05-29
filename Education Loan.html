@@ -191,12 +191,12 @@
         </p><br>
         <h5>Please share the below Details </h5>
         <div class="container">
-         <h5>Education Loan Application</h5>
+            <h5>Education Loan Application</h5>
             <form onsubmit="HRACAL()">
                 <table>
                     <tr>
-                     <th>Client Name:</th>
-                     <td><input type=" text" name="ClientName" id="ClientName" required>
+                        <th>Client Name:</th>
+                        <td><input type=" text" name="ClientName" id="ClientName" required>
                         </td>
                     </tr>
                     <tr>
@@ -221,16 +221,16 @@
                     </tr>
                     <tr>
                         <th>Loan Type:</th>
-                        <td><input type="text" name="LoanAmount" id="LoanAmount" required></td>
+                        <td><input type="text" name="LoanAmount" id="Loantype" required></td>
                     </tr>
                     <tr>
                         <th>Loan amount Required:</th>
                         <td><input type="text" name="JobLocation" id="Loanamountrequired" required></td>
                     </tr>
-                    
                     <tr>
                         <th>ICICI bank account number:</th>
-                        <td><input type="text" name="ICICI bank account number" id="ICICIbankaccountnumber" required></td>
+                        <td><input type="text" name="ICICI bank account number" id="ICICIbankaccountnumber" required>
+                        </td>
                     </tr>
                     <tr>
                         <th>Client Location:</th>
@@ -238,21 +238,22 @@
                     </tr>
                 </table><br>
                 <br>
-                    <h2>Parents details</h2>
-                    <table>
-                 <tr>
-                    <th>Name:</th>
-                    <td><input type="text" name="Name" id="Name" required></td>
-                 </tr>
-                 <tr>
-                     <th>Annual income</th>
-                     <td><input type="text" name="Annual income" id="annualincome" required></td>
-                 </tr>
-                    <th>Mobile:</th>
-                     <td><input type="tel" name="Mobile" id="Mobile" required></td>
-                </table><br>
-                
-
+                <h2>Parents details</h2>
+                <table>
+                    <tr>
+                        <th>Parent Name:</th>
+                        <td><input type="text" name="Name" id="PName" required></td>
+                    </tr>
+                    <tr>
+                        <th>Parent Annual income</th>
+                        <td><input type="text" name="Annual income" id="pannualincome" required></td>
+                    </tr>
+                    <tr>
+                        <th>Parent Mobile:</th>
+                        <td><input type="tel" name="Mobile" id="pmobile" required></td>
+                    </tr>
+                </table>
+                <br>
                 <h2>Partner Details</h2>
                 <table>
                     <!----<tr>
@@ -270,14 +271,20 @@
                     </tr>
                 </table>
                 <br>
-                <input type="submit" value="Submit Application" onclick="Homeloan()">
+                <input type="submit" value="Submit Application" onclick="Eduloan()">
             </form>
             <br>
         </div>
     </div>
 
-
+    <!-----Whatup's Starts---->
+    <div class="whatsapp_float">
+        <a href="https://wa.me/919849811706" target="_blank"><img
+                src="https://etaxfiling.s3.ap-south-1.amazonaws.com/img/img/Whatsup.jpg" width="50px"
+                class="whatsapp_float_btn" /></a>
     </div>
+    <!-----Whatup's Ends--->
+
     <div class="row">
         <div class="col">
             <ol><b>Head Office Address</b>
@@ -306,12 +313,15 @@
             </ol>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/Eduloan.js"></script>
+
 </body>
 
 </html>
