@@ -13,15 +13,6 @@
     <meta title="Demat Account Opening Online">
     <meta description="Do you want create new demit account opening online with etaxfiling company in india">
     <style>
-        /* navbar dorpdown */
-        @media (max-width: 992px) {
-            .submenu{
-                margin-left: .5em;
-                left: unset !important;
-                top: unset !important;
-            }
-        }
-        /* navbar dorpdown End */
         /* image slider */
         .carousel-inner{
             align-items: center;
@@ -431,29 +422,7 @@
             });
         </script>
         <!-------Bar Chart-->
-        <!-------navbar dropdown -->
-        <script>
-            let topLi = document.querySelector("#navbarSupportedContent > ul > li:nth-child(4)");
-            let dropdownMenu = document.querySelector("#navbarSupportedContent > ul > li:nth-child(4) > ul");
-            let lis = dropdownMenu.querySelectorAll("li");
-            lis.forEach(e => {
-                if(e.childElementCount == 2){
-                    e.addEventListener("click",()=>{
-                        e.querySelector("ul").classList.toggle("show");
-                    })
-                    let a = e.querySelector('a');
-                    a.href = "javascript:display()";
-                }
-            });
-            function display(){
-                setTimeout(() => {
-                    dropdownMenu.classList.add("show");
-                    topLi.querySelector("a").classList.add("show");
-                    topLi.querySelector("a").ariaExpanded = "true";
-                }, 100);
-            }
-        </script>
-        <!-------navbar dropdown End -->
+        <script src="js/navbar.js"></script>
         </boby>
 
 </html>
