@@ -12,6 +12,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <meta title="Demat Account Opening Online">
     <meta description="Do you want create new demit account opening online with etaxfiling company in india">
+    <style>
+        /* image slider */
+        .carousel-inner{
+            align-items: center;
+            height: 57vw;
+            max-height: 70vh;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+        }
+        .carousel-item{
+            height: auto;
+        }
+        .carousel-item.active{
+            display: flex;
+        }
+        .w-100{
+            width: auto !important;
+            max-width: 100%;
+            max-height: 70vh;
+            margin: auto;
+        }
+        /* image slider End */
+        </style>
 </head>
 
 <body>
@@ -191,7 +216,7 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src=img/mainpage.jpeg class=" d-block w-100" ,width="250" height="300" alt="...">
+                <img src=img/mainpage.jpeg class=" d-block w-100"  alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <!---    <h5>Professional Tax Advisor Service</h5>
                     <p>Some representative placeholder content for the second slide.
@@ -200,7 +225,7 @@
             </div>
             <div class="carousel-item" data-bs-interval="2000">
                 <img src="https://etaxfiling.s3.ap-south-1.amazonaws.com/img/img/NIFTY.jpg" class="d-block w-100"
-                    ,width="250" height="300" alt="...">
+                     alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <!---<h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.
@@ -208,7 +233,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/IDCARD.jpeg" class="d-block w-100" ,width="250" height="300" alt="...">
+                <img src="img/IDCARD.jpeg" class="d-block w-100"  alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -397,6 +422,7 @@
             });
         </script>
         <!-------Bar Chart-->
+        <script src="js/navbar.js"></script>
         </boby>
 
 </html>
