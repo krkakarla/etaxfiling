@@ -1,5 +1,7 @@
 /******* Etaxfiling Home Page CSS ********/
-
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/utilities";
 /*Selector{
 	Property: value ;
 	
@@ -87,3 +89,63 @@ td {
 .dropdown-menu>li:hover>.submenu {
     display: block;
 }
+
+.services{
+    box-shadow: inset 0px 9px 20px -14px black;
+    display: flex;
+    padding: 3.5em 1em;
+    padding-bottom: 5em;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background: linear-gradient(90deg,rgb(0 255 255 / 24%) 0%, aqua 80%, rgb(0 255 255 / 24%) 100%); */
+}
+
+.card-body{
+    padding: 1.5em;
+}
+.card{
+    box-shadow: 1px 1px 5px 0px #0000005c;
+    transition: all .3s ease-in-out;
+    border-radius: 1em;
+}
+.card:hover{
+    box-shadow: 1px 1px 15px #000000a6;
+    transform: scale(1.05);
+    z-index: 1;
+}
+.table{
+    border: 2px solid black;
+}
+
+.table-div{
+    margin: 1em 0;
+    padding: 0 1em;
+}
+/* ---------------- table scrollbar start ------------ */
+
+.text-primary{
+    max-width: 10em;
+}
+.scroll-box{
+    overflow-x: auto;
+}
+.scroll-box::-webkit-scrollbar {
+    height: 9px;
+}
+.scroll-box::-webkit-scrollbar-track {
+    margin: 0.5em;
+    background: #00000026;
+    border-radius: 7px;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+    background: black;
+    /* margin: 1em; */
+    border-radius: 7px;
+}
+/* ---------------- table scrollbar end ------------ */
+.row{
+    /* this class(row) in bootstarp adds margin */
+    margin: 0; /* this is to remove horizontal scrollbar(overflow of footer) from body */
+}
+
