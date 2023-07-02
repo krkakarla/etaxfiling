@@ -234,10 +234,10 @@
     </div>
     <div class="contact-form">
         <h1>Send Us a Message</h1>
-        <form method="post" action="/send_email.php">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+        <form method="post" id="email-form" action="/send_email">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
             <button type="submit" name="submit">Send</button>
         </form>
     </div>
@@ -255,5 +255,6 @@
             <p>WhatsApp: <a href="https://wa.me/9849811706">+919849811706</a></p>
         </div>
     </footer>
+    <script src="/js/contact.js"></script>
 </body>
 </html>
