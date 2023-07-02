@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -71,8 +69,12 @@
             background-color: #333;
         }
 
+        .tabs a{
+            text-decoration: none;
+            color: white;
+        }
+
         .content {
-            flex: 1;
             padding: 20px;
             color: #333;
             text-align: center;
@@ -130,8 +132,6 @@
         .footer {
             background-color: #333;
             padding: 10px;
-            display: flex;
-            justify-content: space-between;
             color: #fff;
             font-size: 14px;
             z-index: 999;
@@ -204,10 +204,52 @@
             margin-bottom: 10px;
             font-family: Arial, sans-serif;
         }
-        
-        .tabs a{
-            text-decoration: none;
-            color: #fff;
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .top-section {
+                height: 60vh;
+            }
+
+            .logo {
+                top: 10px;
+                left: 10px;
+                max-height: 80px;
+                max-width: 80px;
+            }
+
+            .image-text h1 {
+                font-size: 28px;
+            }
+
+            .image-text h2 {
+                font-size: 18px;
+            }
+
+            .tabs {
+                padding: 10px;
+            }
+
+            .tabs li {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .contact-form {
+                max-width: 320px;
+            }
+
+            .contact-form h1 {
+                font-size: 20px;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -221,9 +263,9 @@
         </div>
         <div class="tabs">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/Sharekhan.html">Services</a></li>
-                <li><a href="/login.html">Login</a></li>
+                <a href="/"><li>Home</li></a>
+                <a href="/Sharekhan.html"><li>Services</li></a>
+                <a href="/login.html"><li>Login</li></a>
             </ul>
         </div>
     </div>
