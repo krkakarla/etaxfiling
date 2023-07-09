@@ -599,42 +599,33 @@
                                 AMOUNT</button>
                         </div>
                     </Form>
-                    <div class="form-container">
-                        <h1>Rental Application Form</h1>
-
-                        <form>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-
-                            <label for="pan">Pan Card:</label>
-                            <input type="text" id="pan" name="pan" required>
-
-                            <label for="rented-address">Rented House Address:</label>
-                            <input type="text" id="rented-address" name="rented-address" required>
-
-                            <label for="rent-amount">Rent Amount:</label>
-                            <input type="text" id="rent-amount" name="rent-amount" required>
-
-                            <label for="courier-address">Address for Sending Courier:</label>
-                            <textarea id="courier-address" name="courier-address" rows="4" required></textarea>
-
-                            <label for="owner-name">House Owner:</label>
-                            <input type="text" id="owner-name" name="owner-name" required>
-
-                            <label for="owner-pan">House Owner Pan Card:</label>
-                            <input type="text" id="owner-pan" name="owner-pan" required>
-
-                            <label for="owner-address">House Owner Address:</label>
-                            <textarea id="owner-address" name="owner-address" rows="4" required></textarea>
-
-                            <label for="phone">Phone Number:</label>
-                            <input type="text" id="phone" name="phone" required>
-
-                            <button type="button" onclick="sendFormData()">Send</button>
-                        </form>
-                    </div>
+                </div>
+                <div class="inputbox">
+                    <h1>Rental Application Form</h1>
+                    <Form onsubmit="sendFormData()">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="pan" class="form-label">Pan Card:</label>
+                        <input type="text" id="pan" name="pan" required><br>
+                        <label for="rented-address" class="form-label">Rented House Address:</label>
+                        <input type="text" id="rented-address" name="rented-address" required><br>
+                        <label for="rent-amount" class="form-label">Rent Amount:</label>
+                        <input type="text" id="rent-amount" name="rent-amount" required><br>
+                        <label for="courier-address" class="form-label">Address for Sending Courier:</label>
+                        <textarea id="courier-address" name="courier-address" rows="2" required></textarea><br>
+                        <label for="owner-name" class="form-label">House Owner:</label>
+                        <input type="text" id="owner-name" name="owner-name" required><br>
+                        <label for="owner-pan" class="form-label">House Owner Pan Card:</label>
+                        <input type="text" id="owner-pan" name="owner-pan" required><br>
+                        <label for="owner-address" class="form-label">House Owner Address:</label>
+                        <textarea id="owner-address" name="owner-address" rows="2" required></textarea><br>
+                        <label for="phone" class="form-label">Phone Number:</label>
+                        <input type="text" id="phone" name="phone" required><br>
+                        <button type="button" onclick="sendFormData()">Send</button>
+                    </form>
                 </div>
             </div>
+        </div>
         </div>
 
     </nav>
