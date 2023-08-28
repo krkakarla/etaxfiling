@@ -1,0 +1,379 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply basic styling to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styles */
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.listing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.header-background {
+    background-image: url("../img/rel.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitted-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.submitted-table th,
+.submitted-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.submitted-table th {
+    background-color: #f5f5f5;
+}
+
+.submitted-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.quote {
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tabs {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.tab {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #333;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.tab:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* About Us section styles */
+#about {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+/* Featured Properties section styles */
+#featured-properties {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#featured-properties h2 {
+    margin-bottom: 20px;
+}
+
+.listing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.property-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.property-image {
+    width: 100%;
+    height: auto;
+}
+
+.property-details {
+    padding: 10px 20px;
+}
+
+.property-price {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.property-address {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ... (previous styles) ... */
+
+/* What We Offer section styles */
+#what-we-offer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#what-we-offer h2 {
+    margin-bottom: 20px;
+}
+
+/* ... (previous styles) ... */
+
+/* Updated styles for What We Offer section */
+.offer-item {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.offer-item img {
+    max-width: 100px auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.offer-details {
+    flex: 1;
+    text-align: left;
+}
+
+.offer-details h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.offer-details p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #777;
+}
+
+/* ... (previous styles) ... */
+
+/* Testimonials section styles */
+#client-testimonials {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#client-testimonials h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 36px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.testimonial img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-details {
+    text-align: center;
+}
+
+.testimonial-details p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-details h4 {
+    font-size: 20px;
+    color: #555;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .testimonial img {
+        margin-right: 20px;
+    }
+
+    .testimonial-details {
+        text-align: left;
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Get in Touch section styles */
+#get-in-touch {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#get-in-touch h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 36px;
+}
+
+#get-in-touch p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.footer {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 14px;
+    z-index: 999;
+}
+
+.footer-addresses {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.footer-addresses p {
+    margin: 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-addresses strong {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.map-link {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>etaxfiling</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styless.css">
+    <script src="js/contactForm.js"></script>
+    <title>RealEstatePage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/etaxfilingcss.css">
 </head>
-<boby>
+
+<body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">EtaxFiling</a>
@@ -183,548 +187,169 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <br>
-        <p class="card-text"> Tax Planning will help us to reduce the Tax burden and below are list of tax exemption and
-            deduction which we can cliam if you have proper documents
-        </p>
-
-        <P Class="card-text"> Before we go for Tax Planning we better to follow the few guidelines like.
-        </P>
-
-        <ol type="1">
-            <li class="text-primary"><b>Avoid Bank FD's</b></li>
-            <ul>For FD amount we can cliam deduction under 80C Cumulative Ceiling (1,50,000 rs) however
-                Interest Income is
-                Taxable. Max exemption
-                allowed for interested income is
-                10,000 rupess so If any income received more than 10,000 rupees is totally taxable.
-                Ex: If you received any interested amount 1,00,000 and your are in with 30% slab then 100000 * 30% is
-                table 30000 is tax amount.
-            </ul>
-            <!---    <ul class="text-success">To void above problem you can better to keep fixed deposits under Parents name or
-                any other family member who income not table.Transfer type should be gift.
-            </ul>-->
-            <br>
-            <li class="text-primary"><b>Income From Sharemarket</b></li>
-            <ul>Any Income from Sharemarket or Mutual Funds like Short Term or Long Term Capital Gain are totally
-                Taxable
-            </ul><br>
-            <li class="text-primary"><b>Avoid PF withdrawal before Maturity</b></li>
-            <ul>Withdrawal of PF amount before maturity is taxble income</ul></br>
-            <li class="text-primary"><b>Invest in NPS Account </b></li>
-            <ul>If you have other deductions to cliam 80C cumulative ceiling 1,50,000 rs then you are advised to opt for
-                <b>NPS employer Contribution</b> and <b>NPS employee Contribution</b> to get more benefits. Please refer
-                the below
-                table to get the idea how new change will help to get more benefit.
-            </ul></br>
-            <div>
-                <table class="table table-bordered border= 1" cellspacing="0">
-                    <tr>
-                        <th class="text-primary" colspan="2"><b>Particulars</b></th>
-                        <th class="text-primary"><b>Central Governament Employer Rs.</b></th>
-                        <th class="text-primary"><b>Private Employer (Employer has opted for NPS)</b></th>
-                        <th class="text-primary"><b>Private Employer(Employer has opted for PPF)</b></th>
-                        <th class="text-primary"><b>Business People</b></th>
-                    </tr>
-                    <tr>
-                        <th colspan="2">Basic salary and dearness allowance</th>
-                        <th>5,50,000</th>
-                        <th>5,50,000</th>
-                        <th>5,50,000</th>
-                        <th>Nil</th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Special allowance</th>
-                        <th>1,00,000</th>
-                        <th>1,00,000</th>
-                        <th>1,00,000</th>
-                        <th>Nil</th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Employer's contribution towards NPS (13% of Rs.5,50,000)</th>
-                        <th>71,500</th>
-                        <th>71,500</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Employer's contribution towards RPF (in excess of 12% of salary)</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                        <th>5,500</th>
-                        <th>Nil</th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Gross salary</th>
-                        <th>7,21,500</th>
-                        <th>7,21,500</th>
-                        <th>6,55,500</th>
-                        <th>Nil</th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Less: standard deduction</th>
-                        <th>50,000</th>
-                        <th>50,000</th>
-                        <th>50,000</th>
-                        <th>Nil</th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Income under the head "salaries"</th>
-                        <th>6,71,500</th>
-                        <th>6,71,500</th>
-                        <th>6,05,500</th>
-                        <th>Nil</th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Business income</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                        <th>8,10,000</th>>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Income from other sources</th>
-                        <th>2,10,000</th>
-                        <th>2,10,000</th>
-                        <th>2,10,000</th>
-                        <th>2,10,000</th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2">Gross total income (GTI)</th>
-                        <th>8,81,500</th>
-                        <th>8,81,500</th>
-                        <th>8,15,500</th>
-                        <th>10,20,000</th>
-                    </tr>
-                    <th>List of Deduction</th>
-                    <tr>
-                        <th style="background-color: lightblue" ;>
-                            DEDUCTIONS NOT COVERED BY CUMULATIVE CEILING- Under section 80CCD(1B) (contribution by the
-                            assessee
-                            towards NPS up to Rs.50,000)
-                        </th>
-                        <th>(a)</th>
-                        <th>50,000</th>
-                        <th>50,000</th>
-                        <th>40,000</th>
-                        <th>50,000</th>
-                    </tr>
-
-                    <tr>
-                        <th>Under section 80CCD(2) [Contribution by employer towards NPS, subject to maximum of 14% of
-                            salary in
-                            the case of central Government employee
-                            or 10% of salary in the case of any other employee]</th>
-                        <th>(b)</th>
-                        <th>71,500</th>
-                        <th>55,000</th>
-                        <th>Nil</th>
-                        <th>Nil</th>
-                    </tr>
-
-                    <tr>
-                        <th>Under section 80D (mediclaim insurance premium) (limited to Rs.25,000 in the case of a
-                            person who is
-                            not a senior citizen)</th>
-                        <th>(c)</th>
-                        <th>25,000</th>
-                        <th>25,000</th>
-                        <th>25,000</th>
-                        <th>25,000</th>
-                    </tr>
-
-                    <tr>
-                        <th style="background-color: lightgreen" ;>DEDUCTIONS COVERED BY CUMULATIVE CEILING OF
-                            Rs.1,50,000-Under section 80C (ppf and
-                            contribution
-                            towards recognised
-                            provied fund)</th>
-                        <th>(d)</th>
-                        <th>(96,000)</th>
-                        <th>(96,000)</th>
-                        <th>(1,50,000)</th>
-                        <th>(30,000)</th>
-                    </tr>
-
-                    <tr>
-                        <th>Under section 80CCC (annuity plan of LIC)</th>
-                        <th>(e)</th>
-                        <th>(5,000)</th>
-                        <th>(5,000)</th>
-                        <th>(5,000)</th>
-                        <th>(5,000)</th>
-                    </tr>
-
-                    <tr>
-                        <th>Under section 80CCD (1) [contribution of X towards NPS (excluding the contribution
-                            considered above
-                            in section 80CCD(1B)), subject
-                            to a maximum of 10% of salary in the case of an employee or 20% of GTI in the case of a
-                            person other
-                            than employee]</th>
-                        <th>(f)</th>
-                        <th>(54,000)</th>
-                        <th>(54,000)</th>
-                        <th>Nil</th>
-                        <th>(2,04,000)</th>
-                    </tr>
-
-                    <tr>
-                        <th>Maximum deductible amount [i.e.,(d) + (e) + (f), subject to a maximum of Rs.1,50,000]</th>
-                        <th>(g)</th>
-                        <th>1,50,000</th>
-                        <th>1,50,000</th>
-                        <th>1,50,000</th>
-                        <th>1,50,000</th>
-                    </tr>
-
-                    <tr>
-                        <th>Net income [GTI-(a)-(b)-(c)-(g)]</th>
-                        <th></th>
-                        <th>5,85,000</th>
-                        <th>6,01,500</th>
-                        <th>6,00,500</th>
-                        <th>7,95,000</th>
-                    </tr>
-                </table>
-                <li class="text-primary"><b>Tax Planning with 20L Salary</b></li>
-            </div>
-            </br>
-            <div>
-                <table class="table table-bordered border= 1" cellspacing="0">
-                    <tr>
-
-                        <th style="background-color: lightblue" ;><b>Description</b></th>
-                        <th style="background-color: lightblue" ;><b>Gross</b></th>
-                        <th style="background-color: lightblue" ;><b>Exempt</b></th>
-                        <th style="background-color: lightblue" ;><b>Taxable</b></th>
-                    </tr>
-                    <tr>
-                        <td>Basic salary</td>
-                        <td>780,684</td>
-                        <td></td>
-                        <td>780,684</td>
-                    </tr>
-                    <tr>
-                        <td>House rent allow</td>
-                        <td>3,40,348</td>
-                        <td>3,40,348</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>special allowances</td>
-                        <td>4,65,425</td>
-                        <td>2,00,000</td>
-                        <td>2,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Driver allowance</td>
-                        <td>1,18,000</td>
-                        <td>1,18,000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>fuel allowance</td>
-                        <td>1,47,500</td>
-                        <td>1,47,500</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Car maitinence</td>
-                        <td>29,500</td>
-                        <td>29,500</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>other allowance</td>
-                        <td>90,000</td>
-                        <td></td>
-                        <td>90,000</td>
-                    </tr>
-                    <tr>
-                        <td>Leave Travel allowance</td>
-                        <td>90,060</td>
-                        <td>90,060</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Books and periodicals</td>
-                        <td>30,000</td>
-                        <td>30,000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>wellness&Fitness</td>
-                        <td>87,655</td>
-                        <td></td>
-                        <td>87,655</td>
-                    </tr>
-                    <tr>
-                        <td>Food alllowance</td>
-                        <td>36,000</td>
-                        <td>36,000</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Taxable salary before Deduction</td>
-                        <td>22,15,172</td>
-                        <td>9,91,408</td>
-                        <td>11,58,339</td>
-                    </tr>
-                    <tr>
-                        <td>80C,80CCCand80CCD(1)</td>
-                        <td></td>
-                        <td></td>
-                        <td>-1,50,000</td>
-                    </tr>
-                    <tr>
-                        <td>80CCD 1B ( Employee Contribution Pri Emp and Gov Max 50,000 rupees)</td>
-                        <td></td>
-                        <td></td>
-                        <td>-50,000</td>
-                    </tr>
-                    <tr>
-                        <td>80CCD2 (Employer Contribution Pri Emp 10% and Gov Emp 15% on Basic)</td>
-                        <td></td>
-                        <td></td>
-                        <td>-50,000</td>
-                    </tr>
-                    <tr>
-                        <td>80D </td>
-                        <td></td>
-                        <td></td>
-                        <td>-50,000</td>
-                    </tr>
-                    <tr>
-                        <td>80EEA</td>
-                        <td></td>
-                        <td></td>
-                        <td>-1,50,000</td>
-                    </tr>
-                    <tr>
-                        <td>standard Deduction</td>
-                        <td></td>
-                        <td></td>
-                        <td>-50,000</td>
-                    </tr>
-                    <tr>
-                        <td>salary income after Deduction</td>
-                        <td></td>
-                        <td></td>
-                        <td>6,58,339</td>
-                    </tr>
-                    <tr>
-                        <td>House rent Loss</td>
-                        <td></td>
-                        <td></td>
-                        <td>-2,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Taxable income</td>
-                        <td>22,15,172</td>
-                        <td></td>
-                        <td>4,58,339</td>
-                    </tr>
-                </table>
-                <p>Under secection 80CCD(1B)(Contribution by the assessee towards NPS up toRS,50,000)</p>
-                <p>Under section 80CCD(2)(contribution by employer towards NPS,subject to maximum of 14%of salary in
-                    casesof
-                    centeral Government employee or 10%of salary in the case of any other employee)
-                </p>
-                <p>under section 80D(mediclaim insurance premium)(limited to Rs.25,000 in the case of aperson who is not
-                    asenior citizen)</p>
-            </div>
-            <div>
-                <table class="table table-bordered border= 1" cellspacing="0">
-                    <tr>
-
-                        <th><b>Description</b></th>
-                        <th><b>Gross</b></th>
-                        <th><b>Exempt</b></th>
-                        <th><b>Taxable</b></th>
-                    </tr>
-                    <tr>
-                        <td>Basic salary</td>
-                        <td>780,684</td>
-                        <td>Nil</td>
-                        <td>780,684</td>
-                    </tr>
-                    <tr>
-                        <td>House rent allow</td>
-                        <td>340,348</td>
-                        <td>340,348</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>special allowances</td>
-                        <td>465425</td>
-                        <td>200000</td>
-                        <td>200000</td>
-                    </tr>
-                    <tr>
-                        <td>Driver allowance</td>
-                        <td>11800</td>
-                        <td>11800</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>fuel allowance</td>
-                        <td>147500</td>
-                        <td>147500</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>Car maitinence</td>
-                        <td>29500</td>
-                        <td>29500</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>other allowance</td>
-                        <td>90000</td>
-                        <td>Nil</td>
-                        <td>90000</td>
-                    </tr>
-                    <tr>
-                        <td>Leave Travel allowance</td>
-                        <td>90060</td>
-                        <td>90060</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>Books and periodicals</td>
-                        <td>30000</td>
-                        <td>30000</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>wellness&Fitness</td>
-                        <td>87655</td>
-                        <td>Nil</td>
-                        <td>87655</td>
-                    </tr>
-                    <tr>
-                        <td>Food alllowance</td>
-                        <td>36000</td>
-                        <td>36000</td>
-                        <td>Nil</td>
-                    </tr>
-                    <tr>
-                        <td>Taxable salary before Deduction</td>
-                        <td>2,215,172</td>
-                        <td>991,408</td>
-                        <td>1,158,339</td>
-                    </tr>
-                    <tr>
-                        <td>80C,80CCCand80CCD(1)</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-150000</td>
-                    </tr>
-                    <tr>
-                        <td>80CCD 1B</td>
-                        <td>Nil</td>
-                        <td>NIl</td>
-                        <td>-50000</td>
-                    </tr>
-                    <tr>
-                        <td>80CCD2</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-50000</td>
-                    </tr>
-                    <tr>
-                        <td>80D</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-50000</td>
-                    </tr>
-                    <tr>
-                        <td>80EEA</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-150000</td>
-                    </tr>
-                    <tr>
-                        <td>standard Deduction</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-50000</td>
-                    </tr>
-                    <tr>
-                        <td>salary income after Deduction</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>658,339</td>
-                    </tr>
-                    <tr>
-                        <td>House rent Loss</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>-200000</td>
-                    </tr>
-                    <tr>
-                        <td>Taxable income</td>
-                        <td>Nil</td>
-                        <td>Nil</td>
-                        <td>458,339</td>
-                    </tr>
-                </table>
-                <p>Under secection 80CCD(1B)(Contribution by the assessee towards NPS up toRS,50,000)</p>
-                <p>Under section 80CCD(2)(contribution by employer towards NPS,subject to maximum of 14%of salary in
-                    casesof
-                    centeral Government employee or 10%of salary in the case of any other employee)
-                </p>
-                <p>under section 80D(mediclaim insurance premium)(limited to Rs.25,000 in the case of aperson who is not
-                    asenior citizen)</p>
-            </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <ol><b>Head Office Address</b>
-                <ul>H.No 61-9/1-13, Kala Nagar 2nd Line</ul>
-                <ul>Near skew bridge</ul>
-                <ul>Vijayawada</ul>
-                <ul>520013</ul>
-                <ul> <a class="single" href="tel:+919849811706">+919849811706</a></ul>
-            </ol>
-            <!----<iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2652310176495!2d78.40056899999999!3d17.494847900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91639bd72c0f%3A0x96dcfde7d3623e59!2sCabs%20For%20Vijayawada!5e0!3m2!1sen!2sin!4v1669300043408!5m2!1sen!2sin"
-            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-            <div>
-            </div>
+    <header class="header">
+        <div class="header-background">
+            <h1 class="quote">"Your Dream Home Awaits"</h1>
         </div>
-        <div class="col">
+        <div class="tabs">
+            <a href="#" class="tab">Buyer</a>
+            <a href="#" class="tab">Seller</a>
         </div>
-        <div class="col">
-            <ol><b>Branch Office Address</b>
-                <ul></ul>
-                <ul>RZ, E7, Raghu Nagar Gali No: 6</ul>
-                <ul>Dabri, New Delhi</ul>
-                <ul>110045</ul>
-                <ul> <a class="single" href="tel:+919849811706">+919849811706</a></ul>
-            </ol>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We specialize in helping buyers find their dream homes. With a wide range of properties in various locations,
+            we ensure that your real estate needs are met.</p>
+    </section>
+    <section id="featured-properties">
+        <h2>List of Properties ready for Sale</h2>
+        <div class="listing-container">
+            <div class="property-card">
+                <img class="property-image" src="img/Building1.jpg" alt=" Hyderabad">
+                <div class="property-details">
+                    <div class="property-price">4.50 Cr+ Negotiable </div>
+                    <div class="property-address">200 Sqare Yards, Manikonda, Hyderabad</div>
+                    <div class="property-address">Four Stair building</div>
+                    <div class="property-address">Rental Income: 14,40,000 rupees per year Rate of Return nearly 3.6 %
+                        PerYear </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <img class="property-image" src="img/Building1.jpg" alt="Vijayawada">
+                <div class="property-details">
+                    <div class="property-price">1.7 Cr + Negotiable</div>
+                    <div class="property-address">144 Sqare Yards, Kala Nagar 2nd Line, Near Benz Cycle, Vijayawada
+                    </div>
+                    <div class="property-address">Rental income: 7,20,000 rupees per year Rate of Return nearly 4.23%
+                        Per Year
+                    </div>
+                </div>
+            </div>
+            <!-- Add more property cards here -->
+        </div>
+    </section>
+    </br>
+    <section id="contact" style="background-color:white;">
+        <div id="submitted-details" class="hidden">
+            <h2>Buyer Preferences</h2>
+            <table class="submitted-table">
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Property Type</th>
+                        <th>Preferred Location</th>
+                        <th>Budget</th>
+                        <th>Additional Preferences</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>Susmita</td>
+                        <td>Individual House or Flat</td>
+                        <td>Bangalore</td>
+                        <td>50K Starting</td>
+                        <td>Near to IT Park</td>
+                    </tr>
+                    <tr>
+                        <td>Raghava</td>
+                        <td>Individual House or Flat</td>
+                        <td>Bangalore</td>
+                        <td>50K Starting</td>
+                        <td>Near to IT Park</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!---- <section id="what-we-offer">
+    <h2>What We Offer</h2>
+    <div class="offer-item">
+        <img src="rel1.jpeg" alt="Offer 1">
+        <div class="offer-details">
+            <h3>Personalized Service</h3>
+            <p>We provide personalized assistance to help you find your dream home.</p>
         </div>
     </div>
+    <div class="offer-item">
+        <img src="rel2.jpeg" alt="Offer 2">
+        <div class="offer-details">
+            <h3>Expert Advice</h3>
+            <p>Our experienced team offers expert advice to guide you through the buying process.</p>
+        </div>
+    </div>
+    Add more offer items here
+</section>  -->
+
+    <!----   <section id="client-testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <img src="client1.jpg" alt="Client 1">
+            <div class="testimonial-details">
+                <p>"I found my dream home with their help. Excellent service and support throughout the process."
+                </p>
+                <h4>John Doe</h4>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="client2.jpg" alt="Client 2">
+            <div class="testimonial-details">
+                <p>"Professional and knowledgeable team. They made the home-buying experience smooth and easy."</p>
+                <h4>Jane Smith</h4>
+            </div>
+        </div>
+         Add more testimonials here 
+    </section>-->
+
+    <section id="get-in-touch">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you. Feel free to reach out with any questions or inquiries.</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="button" onclick="contactForm()">Send</button>
+        </div>
+    </section>
+    <!-----Whatup's Starts---->
+    <div class="whatsapp_float">
+        <a href="https://wa.me/919849811706" target="_blank"><img
+                src="https://etaxfiling.s3.ap-south-1.amazonaws.com/img/img/Whatsup.jpg" width="50px"
+                class="whatsapp_float_btn" /></a>
+    </div>
+    <!-----Whatup's Ends--->
+    <footer class="footer">
+        <div class="footer-addresses">
+            <p><strong>Head Office Address</strong></p>
+            <p class="map-link"
+                onclick="window.open('https://maps.google.com/?q=H.No 61-9/1-13, Kala Nagar 2nd Line, Near Skew Bridge, Vijayawada 520013', '_blank');">
+                H.No 61-9/1-13, Kala Nagar 2nd Line,</p>
+            <p class="map-link"
+                onclick="window.open('https://maps.google.com/?q=H.No 61-9/1-13, Kala Nagar 2nd Line, Near Skew Bridge, Vijayawada 520013', '_blank');">
+                Near Skew Bridge,</p>
+            <p class="map-link"
+                onclick="window.open('https://maps.google.com/?q=H.No 61-9/1-13, Kala Nagar 2nd Line, Near Skew Bridge, Vijayawada 520013', '_blank');">
+                Vijayawada - 520013</p>
+        </div>
+
+        <p>&copy; 2023 Our Real Estate. All rights reserved.</p>
+
+        <div class="footer-contact">
+            <p><strong>Contact Information</strong></p>
+            <p>Phone: <a href="tel:+919849811706">+919849811706</a></p>
+            <p>Email: <a href="mailto:info@example.com">.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/9849811706">+919849811706</a></p>
+        </div>
+    </footer>
     <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
         </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
-    <script src="js/navbar.js"></script>
-</boby>
+
+</body>
 
 </html>
