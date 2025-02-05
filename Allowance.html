@@ -600,6 +600,7 @@
                         </div>
                     </Form>
                 </div>
+                <!---  Rental Application Form  --->
                 <div class="inputbox">
                     <h1>Rental Application Form</h1>
                     <Form onsubmit="sendFormData()">
@@ -623,6 +624,35 @@
                         <input type="text" id="phone" name="phone" required><br>
                         <button type="button" onclick="sendFormData()">Send</button>
                     </form>
+                </div>
+               <!-------Tax Projection Details -->
+                <div class="inputbox">
+                    <h1>Tax Projection Tab</h1>
+                    <Form onsubmit="TAXPRJ()">
+                        <label for="FirstName" class="form-label">First name :</label>
+                        <input type="text" name="FirstName" id="FirstName" required><br>
+                        <label for="LastName" class="form-label">Last name : </label>
+                        <input type="text" name="LastName" id="LastName" required><br>
+                        <label for="basicsalarysec" class="form-label">Gross Salary Including HRA :</label>
+                        <input type="number" name="basicsalarysec" id="basicsalarysec" required><br>
+                        <label for="HRAAllowancesec" class="form-label">HRA Exemption :</label>
+                        <Input Type="number" name="HRAAllowancesec" required id="HRAAllowancesec"><br>
+                        <label for="80CDeduction" class="form-label">80C Deduction Amount :</label>
+                        <Input Type="number" name="80CDeduction" required id="80CDeduction"><br>
+                        <label for="80CCDDeduction" class="form-label">80CCD 1B Deduction Amount :</label>
+                        <Input Type="number" name="80CCDDeduction" required id="80CCDDeduction"><br>
+                        <label for="80CCD2Deduction" class="form-label">80CCD2 Deduction Amount :</label>
+                        <Input Type="number" name="80CCD2Deduction" required id="80CCD2Deduction"><br>
+                        <label for="80DDeduction" class="form-label">80D Deduction Amount :</label>
+                        <Input Type="number" name="80DDeduction" required id="80DDeduction"><br>
+                        <label for="80EEADeduction" class="form-label">80EEA Deduction Amount :</label>
+                        <Input Type="number" name="80EEADeduction" required id="80EEADeduction"><br>
+                        <div>
+                            <!---    <label for="validationCustom01" class="form-label">You can declare HRA Amount of </label>
+                            <Input Type="text" name="MAXHRA" id="MAXHRA"><br>-->
+                            <button type="button" value="Submit" onclick="TAXCAL()">TAXPROJECTOR</button>
+                        </div>
+                    </Form>
                 </div>
             </div>
         </div>
@@ -667,6 +697,7 @@
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/hra.js"></script>
+    <script type="text/javascript" src="js/Taxprojector.js"></script>
     <script src="js/navbar.js"></script>
     <!----Java Script Ends-->
     <!----form javascript-->
