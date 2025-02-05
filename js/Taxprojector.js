@@ -53,16 +53,11 @@ function TAXCAL() {
       else (tax_amt = 0);
 
        if (Taxamountnew > 2400000){tax_amt2 = 300000+0.30*(Taxamountnew-2400000);}
-        else if (Taxamountnew >= 2000000 && Taxamountnew <=2400000){
-            tax_amt2 = 200000 + 0.25*(Taxamountnew-2000000);}
-          else if (Taxamountnew <= 2000001 && Taxamountnew >=1600001){
-          tax_amt2 = (Taxamountnew-1600000)*0.20;}
-          else if (Taxamountnew <= 1600000 && Taxamountnew >=1200001){
-          tax_amt2 = (Taxamountnew-1600000)*0.15;}
-          else if (Taxamountnew <= 1200000 && Taxamountnew >=800001){
-           tax_amt2 = (Taxamountnew-1200000)*0.10;}
-          else if (Taxamountnew <= 800000 && Taxamountnew >=400001){
-          tax_amt2 = (Taxamountnew-800000)*0.05;}
+        else if (Taxamountnew >= 2000000 && Taxamountnew <=2400000){tax_amt2 = 200000 + 0.25*(Taxamountnew-2000000);}
+          else if (Taxamountnew >=1600001 && Taxamountnew <= 2000001){tax_amt2 = 120000 + 0.20*(Taxamountnew-1600000);}
+          else if (Taxamountnew >=1200001 && Taxamountnew <= 1600000){tax_amt2 = 60000 + 0.15*(Taxamountnew-1200000);}
+          else if (Taxamountnew >=800001 && Taxamountnew <= 1200000){tax_amt2 = 20000 + 0.10*(Taxamountnew-800000);}
+          else if (Taxamountnew >=400001 && Taxamountnew <= 800000){tax_amt2 = 0 + 0.05*(Taxamountnew-400000);}
           else (tax_amt2 = 0);
      ///  return tax_amt;
            alert("Projected tax amount as per old regime" + " " +" "+tax_amt+ " " + " and projected tax amount as per new regime "+ " " +tax_amt2+" "+"Thanks for utilizing this services");
