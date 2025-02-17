@@ -40,8 +40,8 @@ function TAXCAL() {
     var deduc80CCD2 = Number(document.getElementById("80CCD2Deduction").value);
     var deduc80D = Number(document.getElementById("80DDeduction").value);
     var deduc80EEA = Number(document.getElementById("80EEADeduction").value);
-    var Taxamountold = basal-HRALL-deduct80c-deduct80ccd-deduc80CCD2-deduc80D-deduc80EEA;
-    var Taxamountnew = basal;
+    var Taxamountold = basal-HRALL-deduct80c-deduct80ccd-deduc80CCD2-deduc80D-deduc80EEA-50000;
+    var Taxamountnew = basal-deduc80CCD2-75000;
     var tax_amt;
     var tax_amt2;
 
