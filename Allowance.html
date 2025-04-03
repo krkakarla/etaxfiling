@@ -692,6 +692,12 @@
             </ol>
         </div>
     </div>
+    <div>
+        Hello: <pre id="email"></pre>
+        Access token: <pre id="access-token"></pre>
+        ID token: <pre id="id-token"></pre>
+        Refresh token: <pre id="refresh-token"></pre>
+    </div>
 
     <!----Java Script Start-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -730,6 +736,17 @@
             window.open(whatsappur, "_blank").focus();
         }
     </script>
+
+    <script type="module">
+    import { userManager } from "./main.js";
+
+    userManager.signinCallback().then(function (user) {
+        document.getElementById("email").textContent = user.profile?.email;
+        document.getElementById("access-token").textContent = user.access_token;
+        document.getElementById("id-token").textContent = user.id_token;
+        document.getElementById("refresh-token").textContent = user.refresh_token;
+    });
+</script>
 </body>
 
 </html>

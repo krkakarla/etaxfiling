@@ -224,7 +224,19 @@
             </ol>
         </div>
     </div>
-    <script src="js/navbar.js"></script>
+
+    <script>
+        // Check if the user is authenticated
+        function isAuthenticated() {
+        }
+
+        // Redirect to login page if not authenticated
+        if (!isAuthenticated()) {
+            window.location.href = 'https://etaxfiling.auth.ap-south-1.amazoncognito.com/login?client_id=1asj6mt2678uffb1af76vtsq1a&response_type=code&scope=email+openid&redirect_uri=https://etaxfiling.co.in/login.html';
+        }
+    </script>
+    <script src="js/navbar.js"></script>--->
+
 </body>
 
 </html>
