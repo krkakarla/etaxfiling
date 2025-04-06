@@ -48,7 +48,7 @@ function TAXCAL() {
     var deduc80EEA = Number(document.getElementById("80EEADeduction").value);
     var homeloan = Number(document.getElementById("Homeloaninterest").value);
     var Taxamountold = basal - HRALL - deduct80c - deduct80ccd - deduc80CCD2 - deduc80D - homeloan - deduc80EEA - 50000;
-    var Taxamountnew = basal - deduc80CCD2 - 75000;
+    var Taxamountnew = basal - deduc80CCD2 - homeloan - 75000;
     var tax_amt;
     var tax_amt2;
 
