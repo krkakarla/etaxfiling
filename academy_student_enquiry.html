@@ -70,6 +70,7 @@
     .primary:hover { background: #1d4ed8; }
     .secondary { background: #eaf0f8; color: var(--navy); }
     .status { display: none; padding: 12px 14px; margin-top: 16px; border-radius: 8px; font-size: 14px; }
+    .status.error { display: block; color: #991b1b; background: #fef2f2; border: 1px solid #fecaca; }
     .status.success { display: block; color: #166534; background: #f0fdf4; border: 1px solid #bbf7d0; }
     .records { border-top: 1px solid var(--border); border-radius: 0 0 16px 16px; margin-bottom: 18px; }
     .records-head { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
@@ -88,191 +89,224 @@
   </style>
 </head>
 <body>
-  <main class="page">
-    <header class="header">
-      <div class="mark" aria-hidden="true">✦</div>
-      <h1>Student Enquiry Form</h1>
-      <p>Please share your details and the course you are interested in.</p>
-    </header>
+<main class="page">
+  <header class="header">
+    <div class="mark" aria-hidden="true">✦</div>
+    <h1>Student Enquiry Form</h1>
+    <p>Please share your details and the course you are interested in.</p>
+  </header>
 
-    <form id="enquiryForm">
-      <h2 class="section-title">Student Information</h2>
-      <div class="grid">
-        <div class="field">
-          <label for="personName">Person Name *</label>
-          <input id="personName" name="personName" type="text" autocomplete="name" placeholder="Enter full name" required>
-        </div>
-        <div class="field">
-          <label for="phone">Phone Number *</label>
-          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Enter phone number"
-                 pattern="[0-9+\s()-]{7,20}" title="Enter a valid phone number (7–20 characters)" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com">
-        </div>
-        <div class="field">
-          <label for="course">Course Details *</label>
-          <select id="course" name="course" required>
-            <option value="">Select a course</option>
-            <option>Dance</option>
-            <option>Self Defence</option>
-            <option>Cultural Activities</option>
-            <option>Yoga / Fitness</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="field full" id="otherCourseField" style="display:none">
-          <label for="otherCourse">Please specify the course</label>
-          <input id="otherCourse" name="otherCourse" type="text" placeholder="Enter course name">
-        </div>
-        <div class="field full">
-          <label for="address">Address</label>
-          <textarea id="address" name="address" autocomplete="street-address" placeholder="House / street, area, city, PIN code"></textarea>
-        </div>
-        <div class="field full">
-          <label for="source">How did you hear about us? *</label>
-          <select id="source" name="source" required>
-            <option value="">Select an option</option>
-            <option>Friend / Family</option>
-            <option>Social Media</option>
-            <option>Google / Internet Search</option>
-            <option>Banner / Poster</option>
-            <option>School / College</option>
-            <option>Existing Student</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="field full">
-          <label for="message">Additional Information (optional)</label>
-          <textarea id="message" name="message" placeholder="Preferred class timings, age of student, questions, etc."></textarea>
-        </div>
+  <form id="enquiryForm">
+    <h2 class="section-title">Student Information</h2>
+    <div class="grid">
+      <div class="field">
+        <label for="personName">Person Name *</label>
+        <input id="personName" name="personName" type="text" autocomplete="name" placeholder="Enter full name" required>
       </div>
-      <p class="hint">Fields marked * are required.</p>
+      <div class="field">
+        <label for="phone">Phone Number *</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Enter phone number"
+               pattern="[0-9+\s()-]{7,20}" title="Enter a valid phone number (7–20 characters)" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com">
+      </div>
+      <div class="field">
+        <label for="course">Course Details *</label>
+        <select id="course" name="course" required>
+          <option value="">Select a course</option>
+          <option>Dance</option>
+          <option>Self Defence</option>
+          <option>Cultural Activities</option>
+          <option>Yoga / Fitness</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field full" id="otherCourseField" style="display:none">
+        <label for="otherCourse">Please specify the course</label>
+        <input id="otherCourse" name="otherCourse" type="text" placeholder="Enter course name">
+      </div>
+      <div class="field full">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" autocomplete="street-address" placeholder="House / street, area, city, PIN code"></textarea>
+      </div>
+      <div class="field full">
+        <label for="source">How did you hear about us? *</label>
+        <select id="source" name="source" required>
+          <option value="">Select an option</option>
+          <option>Friend / Family</option>
+          <option>Social Media</option>
+          <option>Google / Internet Search</option>
+          <option>Banner / Poster</option>
+          <option>School / College</option>
+          <option>Existing Student</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="message">Additional Information (optional)</label>
+        <textarea id="message" name="message" placeholder="Preferred class timings, age of student, questions, etc."></textarea>
+      </div>
+    </div>
+    <p class="hint">Fields marked * are required.</p>
+    <div class="actions">
+      <button class="primary" type="submit">Save Enquiry</button>
+      <button class="secondary" type="reset">Clear Form</button>
+    </div>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+  </form>
+
+  <section class="records" aria-labelledby="recordsTitle">
+    <div class="records-head">
+      <h2 id="recordsTitle">Saved Enquiries on This Device</h2>
       <div class="actions">
-        <button class="primary" type="submit">Save Enquiry</button>
-        <button class="secondary" type="reset">Clear Form</button>
+        <button class="secondary" type="button" id="exportBtn">Export CSV</button>
+        <button class="secondary" type="button" id="clearRecordsBtn">Delete Saved Enquiries</button>
       </div>
-      <div id="status" class="status" role="status" aria-live="polite"></div>
-    </form>
+    </div>
+    <p>Enquiries are stored only in this browser on this device. Export the CSV regularly to keep a separate copy. This form does not automatically send information to the academy.</p>
+    <div id="recordArea"><p class="empty">No enquiries saved yet.</p></div>
+  </section>
+  <footer>Student Enquiry Form</footer>
+</main>
 
-    <section class="records" aria-labelledby="recordsTitle">
-      <div class="records-head">
-        <h2 id="recordsTitle">Saved Enquiries on This Device</h2>
-        <div class="actions">
-          <button class="secondary" type="button" id="exportBtn">Export CSV</button>
-          <button class="secondary" type="button" id="clearRecordsBtn">Delete Saved Enquiries</button>
-        </div>
-      </div>
-      <p>Enquiries are stored only in this browser on this device. Export the CSV regularly to keep a separate copy. This form does not automatically send information to the academy.</p>
-      <div id="recordArea"><p class="empty">No enquiries saved yet.</p></div>
-    </section>
-    <footer>Student Enquiry Form</footer>
-  </main>
+<script>
+  const STORAGE_KEY = "academyStudentEnquiries";
+  const form = document.getElementById("enquiryForm");
+  const statusBox = document.getElementById("status");
+  const course = document.getElementById("course");
+  const otherCourseField = document.getElementById("otherCourseField");
+  const otherCourse = document.getElementById("otherCourse");
 
-  <script>
-    const STORAGE_KEY = "academyStudentEnquiries";
-    const form = document.getElementById("enquiryForm");
-    const statusBox = document.getElementById("status");
-    const course = document.getElementById("course");
-    const otherCourseField = document.getElementById("otherCourseField");
-    const otherCourse = document.getElementById("otherCourse");
+  function getRecords() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); }
+    catch (_) { return []; }
+  }
+  function setRecords(records) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
+  }
+  function safeText(value) {
+    return String(value ?? "").replace(/[&<>"']/g, char => ({
+      "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+    }[char]));
+  }
+  function renderRecords() {
+    const area = document.getElementById("recordArea");
+    const records = getRecords();
+    if (!records.length) {
+      area.innerHTML = '<p class="empty">No enquiries saved yet.</p>';
+      return;
+    }
+    const list = document.createElement("ol");
+    list.className = "record-list";
+    records.slice().reverse().forEach(record => {
+      const item = document.createElement("li");
+      item.innerHTML = "<strong>" + safeText(record.personName) + "</strong> — " +
+              safeText(record.course) + " · " + safeText(record.phone) +
+              " <span style='color:#64748b'>(" + safeText(record.savedAt) + ")</span>";
+      list.appendChild(item);
+    });
+    area.replaceChildren(list);
+  }
 
-    function getRecords() {
-      try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); }
-      catch (_) { return []; }
-    }
-    function setRecords(records) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
-    }
-    function safeText(value) {
-      return String(value ?? "").replace(/[&<>"']/g, char => ({
-        "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
-      }[char]));
-    }
-    function renderRecords() {
-      const area = document.getElementById("recordArea");
-      const records = getRecords();
-      if (!records.length) {
-        area.innerHTML = '<p class="empty">No enquiries saved yet.</p>';
-        return;
-      }
-      const list = document.createElement("ol");
-      list.className = "record-list";
-      records.slice().reverse().forEach(record => {
-        const item = document.createElement("li");
-        item.innerHTML = "<strong>" + safeText(record.personName) + "</strong> — " +
-          safeText(record.course) + " · " + safeText(record.phone) +
-          " <span style='color:#64748b'>(" + safeText(record.savedAt) + ")</span>";
-        list.appendChild(item);
+  course.addEventListener("change", () => {
+    const show = course.value === "Other";
+    otherCourseField.style.display = show ? "flex" : "none";
+    otherCourse.required = show;
+    if (!show) otherCourse.value = "";
+  });
+
+  // API Gateway endpoint (POST)
+  const API_URL = "https://hsuxxaag0i.execute-api.ap-south-1.amazonaws.com/enquiry";
+
+  form.addEventListener("submit", async event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (data.course === "Other" && data.otherCourse.trim()) data.course = "Other: " + data.otherCourse.trim();
+
+    // Map form fields to the names the Lambda/DynamoDB expects
+    const payload = {
+      Person_Name: data.personName.trim(),
+      Phone_Number: data.phone.trim(),
+      Email: (data.email || "").trim(),
+      Course_Details: data.course,
+      Address: (data.address || "").trim(),
+      How_You_Know_Us: data.source,
+      Lead_Converted: "no",
+      Comments: (data.message || "").trim()
+    };
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    statusBox.textContent = "Submitting...";
+    statusBox.className = "status success";
+    try {
+      const res = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
       });
-      area.replaceChildren(list);
-    }
-
-    course.addEventListener("change", () => {
-      const show = course.value === "Other";
-      otherCourseField.style.display = show ? "flex" : "none";
-      otherCourse.required = show;
-      if (!show) otherCourse.value = "";
-    });
-
-    form.addEventListener("submit", event => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      const data = Object.fromEntries(new FormData(form).entries());
-      if (data.course === "Other" && data.otherCourse.trim()) data.course = "Other: " + data.otherCourse.trim();
-      delete data.otherCourse;
-      data.savedAt = new Date().toLocaleString();
-      try {
-        const records = getRecords();
-        records.push(data);
-        setRecords(records);
-        renderRecords();
-        form.reset();
-        otherCourseField.style.display = "none";
-        otherCourse.required = false;
-        statusBox.textContent = "Enquiry saved in this browser. Use Export CSV to keep a backup.";
-        statusBox.className = "status success";
-      } catch (_) {
-        statusBox.textContent = "Could not save this enquiry. Your browser may block local storage.";
-        statusBox.className = "status success";
+      const result = await res.json();
+      if (!res.ok) {
+        const detail = result.errors ? JSON.stringify(result.errors) : (result.message || "Request failed");
+        throw new Error(detail);
       }
-    });
-
-    form.addEventListener("reset", () => {
-      statusBox.className = "status";
+      // Keep a local copy for the "Saved on this device" list
+      data.savedAt = new Date().toLocaleString();
+      delete data.otherCourse;
+      const records = getRecords();
+      records.push(data);
+      setRecords(records);
+      renderRecords();
+      form.reset();
       otherCourseField.style.display = "none";
       otherCourse.required = false;
-    });
+      statusBox.textContent = "Enquiry submitted successfully. ID: " + result.Enquiry_ID;
+      statusBox.className = "status success";
+    } catch (err) {
+      statusBox.textContent = "Could not submit enquiry: " + err.message;
+      statusBox.className = "status error";
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
 
-    document.getElementById("exportBtn").addEventListener("click", () => {
-      const records = getRecords();
-      if (!records.length) {
-        statusBox.textContent = "There are no saved enquiries to export.";
-        statusBox.className = "status success";
-        return;
-      }
-      const columns = ["savedAt", "personName", "phone", "email", "course", "address", "source", "message"];
-      const quote = value => '"' + String(value ?? "").replace(/"/g, '""') + '"';
-      const csv = [columns.join(","), ...records.map(row => columns.map(col => quote(row[col])).join(","))].join("\r\n");
-      const blob = new Blob(["\uFEFF" + csv], { type: "text/csv;charset=utf-8;" });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = "academy_student_enquiries.csv";
-      link.click();
-      URL.revokeObjectURL(url);
-    });
+  form.addEventListener("reset", () => {
+    statusBox.className = "status";
+    otherCourseField.style.display = "none";
+    otherCourse.required = false;
+  });
 
-    document.getElementById("clearRecordsBtn").addEventListener("click", () => {
-      if (confirm("Delete all enquiries saved in this browser? Export a CSV first if you need a backup.")) {
-        localStorage.removeItem(STORAGE_KEY);
-        renderRecords();
-        statusBox.textContent = "Saved enquiries deleted from this browser.";
-        statusBox.className = "status success";
-      }
-    });
-    renderRecords();
-  </script>
+  document.getElementById("exportBtn").addEventListener("click", () => {
+    const records = getRecords();
+    if (!records.length) {
+      statusBox.textContent = "There are no saved enquiries to export.";
+      statusBox.className = "status success";
+      return;
+    }
+    const columns = ["savedAt", "personName", "phone", "email", "course", "address", "source", "message"];
+    const quote = value => '"' + String(value ?? "").replace(/"/g, '""') + '"';
+    const csv = [columns.join(","), ...records.map(row => columns.map(col => quote(row[col])).join(","))].join("\r\n");
+    const blob = new Blob(["\uFEFF" + csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "academy_student_enquiries.csv";
+    link.click();
+    URL.revokeObjectURL(url);
+  });
+
+  document.getElementById("clearRecordsBtn").addEventListener("click", () => {
+    if (confirm("Delete all enquiries saved in this browser? Export a CSV first if you need a backup.")) {
+      localStorage.removeItem(STORAGE_KEY);
+      renderRecords();
+      statusBox.textContent = "Saved enquiries deleted from this browser.";
+      statusBox.className = "status success";
+    }
+  });
+  renderRecords();
+</script>
 </body>
 </html>
